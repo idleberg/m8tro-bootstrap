@@ -28,8 +28,8 @@ a.btn, .pager a, a.navbar-brand {
 }
 
 .table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
-background-color: @m8tro-theme;
-color: @body-bg;
+  background-color: @m8tro-theme;
+  color: @body-bg;
 }
 
 table a:hover, .table a:hover {
@@ -44,8 +44,8 @@ a.text-muted:hover {
 }
 
 a.list-group-item:hover, a.list-group-item:focus  {
-text-decoration: none;
-background-color: @gray-dark;
+  text-decoration: none;
+  background-color: @gray-dark;
 }
 
 .nav a {
@@ -54,8 +54,8 @@ background-color: @gray-dark;
 
 
 .nav-tabs>li>a:hover {
-border-color: @gray-light;
-border-bottom-color: transparent;
+  border-color: @gray-light;
+  border-bottom-color: transparent;
 }
 
 td:hover > .fa {color: @body-bg;}
@@ -69,13 +69,13 @@ td:hover > .fa {color: @body-bg;}
 .dropdown-menu>li>a{font-weight: lighter;text-decoration: none;}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-background-color: @link-color;
-color: @body-bg;
+  background-color: @link-color;
+  color: @body-bg;
 }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
-background-color:@m8tro-theme;
-color: @text-color;
+  background-color:darken(@navbar-inverse-bg, 5%);
+  color: @body-bg;
 }
 
 .navbar-inverse .dropdown-menu {
@@ -91,40 +91,45 @@ background-color: @m8tro-theme;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-color: @link-color;
-background-color: @body-bg;
-text-decoration: underline;
+  color: @link-color;
+  background-color: @body-bg;
+  text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus,
+{
+  color: @body-bg;
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-color: @link-color;
-background-color: @m8tro-theme;
-text-decoration: underline;
+  color: @body-bg;
+  background-color: @m8tro-theme;
+  text-decoration: underline;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-color: @link-color;
-background-color: @body-bg;
-text-decoration: underline;
+  color: @link-color;
+  background-color: @body-bg;
+  text-decoration: underline;
 }
 
 .navbar-inverse .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-color: @link-color;
-background-color: @body-bg;
+  color: @link-color;
+  background-color: @body-bg;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-color: @link-color;
-background: @m8tro-theme;
+  color: @link-color;
+  background: @m8tro-theme;
 }
 
 a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
-color: @gray-dark;
-background-color: transparent;
+  color: @gray-dark;
+  background-color: transparent;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .btn {
