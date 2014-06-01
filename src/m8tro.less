@@ -208,14 +208,24 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .jumbotron .btn-default {
   color:@body-bg;
-  background-color: @text-color;
+  background-color:transparent;
+  border: 1px @gray-lighter solid;
+}
+
+.jumbotron .btn-default:hover {
   border: 1px @body-bg solid;
 }
 
-// .jumbotron .btn-primary {
-//   color:@brand-primary;
-//   background-color: @body-bg;
-// }
+.jumbotron .btn-primary {
+  color:@brand-primary;
+  background-color: @body-bg;
+}
+
+.jumbotron .btn-primary:hover {
+  color:@body-bg;
+  background-color:transparent;
+  border: 1px @body-bg solid;
+}
 
 // .jumbotron .btn-success {
 //   color:@text-color;
