@@ -1,0 +1,7 @@
+*.lock
+.idea
+_site
+bower_components
+build
+components
+node_modules
