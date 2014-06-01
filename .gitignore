@@ -1,5 +1,6 @@
 *.lock
 .idea
+_jumbotron.html
 _site
 bower_components
 build
