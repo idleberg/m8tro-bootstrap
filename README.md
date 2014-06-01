@@ -12,6 +12,8 @@ A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-u
 
 Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of the original Bootstrap 3.1.1 style-sheet.
 
+This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr).
+
 ### Developers
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
