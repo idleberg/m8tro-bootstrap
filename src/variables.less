@@ -1,51 +1,3 @@
-// M8tro 3.1.1-alpha
-// Variables
-// --------------------------------------------------
-
-//== Colors
-//
-//## Gray and brand colors for use across Bootstrap.
-
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              #231f20;
-@gray-light:             #727272;   // #999
-@gray:                   mix(@gray-light,@gray-dark, 50%);
-@gray-lighter:           #ecf0f1; // #eee
-
-
-// M8tro Bootstrap
-@m8tro-red:    #ed1c24;
-@m8tro-orange: #f68b1f;
-@m8tro-yellow: #fcaf17;
-@m8tro-green:  #318432;
-@m8tro-aqua:   #6bc9c7;
-@m8tro-blue:   #3c9cd6;
-@m8tro-purple: #aa5ea6;
-@m8tro-pink:   #f172ac;
-
-@m8tro-theme:  @m8tro-blue;
-
-@brand-primary:         #fff;
-@brand-success:         @m8tro-green;
-@brand-info:            @m8tro-aqua;
-@brand-warning:         @m8tro-yellow;
-@brand-danger:          @m8tro-red;
-
-//== Scaffolding
-//
-// ## Settings for some of the most global styles.
-
-//** Background color for `<body>`.
-@body-bg:               #000;
-//** Global text color on `<body>`.
-@text-color:            @brand-primary;
-
-//** Global textual link color.
-@link-color:            #fff;
-//** Link hover color set via `darken()` function.
-@link-hover-color:      @link-color;
-
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -345,7 +297,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @body-bg;
-@navbar-default-bg:                #000;
+@navbar-default-bg:                @body-bg;
 @navbar-default-border:            transparent;
 
 // Navbar links

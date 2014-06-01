@@ -67,6 +67,7 @@ td:hover > .fa {color: @body-bg;}
 .panel-footer{font-size:0.8em;}
 .dropdown-menu {margin: 0;}
 .dropdown-menu>li>a{font-weight: lighter;text-decoration: none;}
+.dropdown-menu .divider {background-color: @link-color;}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
   background-color: @link-color;
@@ -76,6 +77,10 @@ td:hover > .fa {color: @body-bg;}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
   background-color:darken(@navbar-inverse-bg, 5%);
   color: @body-bg;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  background-color: @body-bg;
 }
 
 .navbar-inverse .dropdown-menu {
@@ -144,6 +149,7 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   color:@link-color;
   border: 1px @link-color solid;
+  background-color: @body-bg;
 }
 
 .btn-primary {
