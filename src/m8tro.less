@@ -14,9 +14,15 @@ strong {font-weight:200;}
   }
 }
 
-a {
+a{
   text-decoration: underline;
 }
+
+a.btn, .pager a {
+  text-decoration: none;
+}
+
+
 
 .pager li>a:hover, .pager li>a:focus{
   border: 1px @text-color solid;
@@ -78,7 +84,7 @@ color: @text-color;
 }
 
 .navbar-inverse .dropdown-menu>li>a {
-color: @m8tro-theme;
+color: @gray-light;
 }
 
 .navbar-inverse .divider {
@@ -104,8 +110,8 @@ text-decoration: underline;
 }
 
 .navbar-inverse .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-color: @body-bg;
-background-color: @m8tro-theme;
+color: @link-color;
+background-color: @body-bg;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
