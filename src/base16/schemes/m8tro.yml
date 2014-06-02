@@ -1,0 +1,19 @@
+# Base16 Builder scheme by Jan T. Sott
+scheme: "M8tro"
+author: "Jan T. Sott"
+base00: "000000" # ----
+base01: "xxxxxx" # ---
+base02: "xxxxxx" # --
+base03: "231f20" # -
+base04: "xxxxxx" # +
+base05: "727272" # ++
+base06: "b9b6b0" # +++
+base07: "ffffff" # ++++
+base08: "ed1c24" # red
+base09: "f36f21" # orange
+base0A: "faa61a" # yellow
+base0B: "80c342" # green
+base0C: "00b3b5" # aqua
+base0D: "3c9cd6" # blue
+base0E: "5c2d91" # purple
+base0F: "f472d0" # brown
