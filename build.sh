@@ -4,7 +4,7 @@ echo
 echo M8tro 3.1.1-alpha
 echo =================
 
-if [ -z "$1" ]
+if [ -z $1 ]
 then
 	for THEME in 'src/themes'/*
 	do
