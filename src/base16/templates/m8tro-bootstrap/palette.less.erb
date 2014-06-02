@@ -1,35 +1,38 @@
-//## <%= @scheme %>
-@m8tro-red:    #<%= @base["08"]["hex"] %>;
-@m8tro-orange: #<%= @base["09"]["hex"] %>;
-@m8tro-yellow: #<%= @base["0A"]["hex"] %>;
-@m8tro-green:  #<%= @base["0B"]["hex"] %>;
-@m8tro-aqua:   #<%= @base["0C"]["hex"] %>;
-@m8tro-blue:   #<%= @base["0D"]["hex"] %>;
-@m8tro-purple: #<%= @base["0E"]["hex"] %>;
-@m8tro-pink:   #<%= @base["0F"]["hex"] %>;
+/*
+ *   Title: M8tro
+ *  Author: Jan T. Sott
+ *     URL: http://github.com/idleberg/m8tro-bootstrap
+ */
 
-//## Gray and brand colors for use across Bootstrap.
-@gray-darker:            lighten(#000, 13.5%);
-@gray-dark:              #<%= @base["03"]["hex"] %>;
-@gray-light:             #<%= @base["05"]["hex"] %>;
-@gray-lighter:           #<%= @base["06"]["hex"] %>;
-@gray:                   mix(@gray-light,@gray-dark, 50%);
+// Base16 colors
+        @m8tro-red: #<%= @base["08"]["hex"] %>; /* base-08 */
+     @m8tro-orange: #<%= @base["09"]["hex"] %>; /* base-09 */
+     @m8tro-yellow: #<%= @base["0A"]["hex"] %>; /* base-0A */
+      @m8tro-green: #<%= @base["0B"]["hex"] %>; /* base-0B */
+       @m8tro-aqua: #<%= @base["0C"]["hex"] %>; /* base-0C */
+       @m8tro-blue: #<%= @base["0D"]["hex"] %>; /* base-0C */
+       @m8tro-blue: #<%= @base["0E"]["hex"] %>; /* base-0D */
+     @m8tro-purple: #<%= @base["0F"]["hex"] %>; /* base-0F */
 
-@brand-primary:         #<%= @base["07"]["hex"] %>;
-@brand-success:         @m8tro-green;
-@brand-info:            @m8tro-blue;
-@brand-warning:         @m8tro-yellow;
-@brand-danger:          @m8tro-red;
+// Shades of gray
+      @gray-darker: lighten(#000, 13.5%);
+        @gray-dark: #<%= @base["03"]["hex"] %>;
+       @gray-light: #<%= @base["05"]["hex"] %>;
+     @gray-lighter:  #<%= @base["06"]["hex"] %>;
+             @gray: mix(@gray-light,@gray-dark, 50%);
 
-//** Background color for `<body>`.
-@body-bg:               #<%= @base["00"]["hex"] %>;
-//** Global text color on `<body>`.
-@text-color:            @brand-primary;
+// Bootstrap colors
+    @brand-primary: @text-color;
+    @brand-success: @m8tro-green;
+       @brand-info: @m8tro-blue;
+    @brand-warning: @m8tro-yellow;
+     @brand-danger: @m8tro-red;
 
-//** Global textual link color.
-@link-color:            @gray-lighter;
-//** Link hover color set via `darken()` function.
-@link-hover-color:      @link-color;
-
+// Document colors
+          @body-bg: #<%= @base["00"]["hex"] %>;
+       @text-color: #<%= @base["07"]["hex"] %>;
+       @link-color: @gray-lighter;
+ @link-hover-color: @link-color;
+ 
 // Theme
-@m8tro-theme: @m8tro-aqua;
+      @m8tro-theme: @m8tro-aqua;

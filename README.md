@@ -12,30 +12,24 @@ A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-u
 
 ### End user
 
-Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of the original Bootstrap 3.1.1 style-sheet.
+Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of a Bootstrap 3.1.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases load time.
 
-This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr).
+This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr).
 
 ### Developers
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
 2. Install [Bower](http://bower.io/) components `bower install`
-3. Change the files in the *src*-folder
+3. Edit any of the files in the *src*-folder
 4. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
 
 ## Customize
 
-This repository includes templates for Chris Kempson's [Base16 Builder](https://github.com/chriskempson/base16-builder). 
+This repository includes templates for Chris Kempson's [Base16 Builder](https://github.com/chriskempson/base16-builder), which you can use to create your own color schemes.
 
 ## Contribute
 
-Anybody can contribute new features and bug fixes by cloning the repository, then sending a pull request.
-
-## Authors
-
-M8tro Theme by [Jan T. Sott](https://github.com/idleberg)
-
-Bootstrap templates and build setup by [Thomas Park](https://github.com/thomaspark)
+Anybody can contribute new features and bug fixes by cloning the repository, and then sending a pull request.
 
 ## License
 
