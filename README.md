@@ -4,7 +4,7 @@
 
 A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later. On iOS and Android, the respective default fonts will be used as substitute.
 
-![Animated Screenshot](https://raw.github.com/idleberg/m8tro-bootstrap/master/screenshot)
+![Animated Screenshot](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/screenshot.gif)
 
 [Demo Time](http://idleberg.github.io/m8tro-bootstrap/)
 
