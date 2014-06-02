@@ -2,7 +2,7 @@
 
 *This is work in progress*
 
-A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later. On iOS and Android, the respective default font will be substitute.
+A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later. On iOS and Android, the respective default fonts will be used as substitute.
 
 [Live Demo](http://idleberg.github.io/m8tro-bootstrap/)
 
@@ -21,9 +21,18 @@ This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Boot
 3. Change the files in the *src*-folder
 4. Run `./build.sh` to run the [LESS](http://lesscss.org/) compiler
 
+## Customize
+
+This repository includes templates for Chris Kempson's [Base16 Builder](https://github.com/chriskempson/base16-builder). 
+
 ## Contribute
 
 Anybody can contribute new features and bug fixes by cloning the repository, then sending a pull request.
+
+## Authors
+
+M8tro Theme by [Jan T. Sott](https://github.com/idleberg)
+Bootstrap templates and build setup by [Thomas Park](https://github.com/thomaspark)
 
 ## License
 
