@@ -32,6 +32,7 @@ Anybody can contribute new features and bug fixes by cloning the repository, the
 ## Authors
 
 M8tro Theme by [Jan T. Sott](https://github.com/idleberg)
+
 Bootstrap templates and build setup by [Thomas Park](https://github.com/thomaspark)
 
 ## License
