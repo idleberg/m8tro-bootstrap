@@ -1,43 +1,22 @@
 {
-  "name": "bootswatch",
-  "description": "Bootswatch is a collection of themes for Bootstrap.",
-  "version": "3.1.1+1",
-  "author": "Thomas Park",
-  "homepage": "http://bootswatch.com",
+  "name": "M8tro",
+  "description": "A Microsoft Modern UI-inspired Bootstrap 3.1 theme",
+  "version": "3.1.1-alpha",
+  "author": "Jan T. Sott",
+  "homepage": "http://github.com/idlberg.com",
+
   "repository": {
     "type": "git",
-    "url": "git://github.com/thomaspark/bootswatch.git"
+    "url": "git://github.com/idleberg/m8tro-bootstrap.git"
   },
   "license": "MIT",
-  "ignore": [
-    "2",
-    "api",
-    "assets",
-    "bower_components",
-    "custom",
-    "default",
-    "global",
-    "help",
-    "tests",
-    "_config.yml",
-    ".gitignore",
-    ".travis.yml",
-    "CNAME",
-    "composer.json",
-    "favicon.ico",
-    "Gemfile",
-    "Gruntfile.js",
-    "index.html",
-    "package.json",
-    "*/index.html",
-    "*/thumbnail.png"
-  ],
   "dependencies": {
     "bootstrap": "~3.1.1"
   },
   "devDependencies": {
-    "font-awesome": "~4.0.0",
+    "font-awesome": "~4.1.0",
     "html5shiv": "~3.7.0",
     "respond": "~1.4.2"
-  }
+  },
+  "private": true
 }
