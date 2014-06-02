@@ -21,7 +21,7 @@ This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Boot
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
 2. Install [Bower](http://bower.io/) components `bower install`
 3. Change the files in the *src*-folder
-4. Run `./m8ke` (or `./m8ke theme`)to run the [LESS](http://lesscss.org/) compiler
+4. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
 
 ## Customize
 
