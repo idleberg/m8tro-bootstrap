@@ -2,7 +2,7 @@
 
 *This is work in progress*
 
-A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later. The recommended fallback-font is [Lato](<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>).
+A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later.
 
 [Live Demo](http://idleberg.github.io/m8tro-bootstrap/)
 
