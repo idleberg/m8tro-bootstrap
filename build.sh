@@ -9,4 +9,4 @@ else
 fi
 
 echo Compiling style sheet for $THEME, please wait... 
-lessc -x src/themes/$THEME.build.less dist/$THEME.min.css
+lessc -x src/themes/$THEME/build.less dist/$THEME.min.css

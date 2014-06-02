@@ -16,10 +16,13 @@ This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Boot
 
 ### Developers
 
-1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
-2. Install [Bower](http://bower.io/) components `bower install
+* Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
+* Install [Bower](http://bower.io/) components `bower install`
+
+All files meant to be edited are stored in the `src` folder. You can build a style sheet using the `./build.sh/` (or `./build.sh theme`).
+
 3. Change the files in the *src*-folder
-4. Run `./build.sh` to run the [LESS](http://lesscss.org/) compiler
+4. Run `./build.sh` (or `bto run the [LESS](http://lesscss.org/) compiler
 
 ## Customize
 
