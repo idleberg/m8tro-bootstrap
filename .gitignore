@@ -4,5 +4,4 @@ _site
 bower_components
 build
 components
-dist/*.css
 node_modules

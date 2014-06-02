@@ -24,7 +24,7 @@ This theme is compatible with [Bootstrap Listr](https://github.com/idleberg/Boot
 All files meant to be edited are stored in the `src` folder. You can build a style sheet using the `./build.sh/` (or `./build.sh theme`).
 
 3. Change the files in the *src*-folder
-4. Run `./build.sh` (or `bto run the [LESS](http://lesscss.org/) compiler
+4. Run `./m8ke` (or `./m8ke theme`)to run the [LESS](http://lesscss.org/) compiler
 
 ## Customize
 
