@@ -53,6 +53,9 @@
        @m8tro-blue: @f-blue;        /* base-0D */
      @m8tro-purple: @f-purple-dark; /* base-0E */
       @m8tro-brown: @f-brown;       /* base-0F */
+      
+// Theme
+      @m8tro-theme: @m8tro-aqua;
 
 // Shades of gray
       @gray-darker: lighten(#000, 13.5%);
@@ -62,7 +65,7 @@
              @gray: mix(@gray-light,@gray-dark, 50%);
 
 // Bootstrap colors
-    @brand-primary: #fff;
+    @brand-primary: @m8tro-aqua;
     @brand-success: @m8tro-green;
        @brand-info: @m8tro-blue;
     @brand-warning: @m8tro-yellow;
@@ -70,9 +73,6 @@
 
 // Document colors
           @body-bg: #000;
-       @text-color: @brand-primary;
+       @text-color: #fff;
        @link-color: #fff;
  @link-hover-color: @link-color;
- 
-// Theme
-      @m8tro-theme: @m8tro-aqua;
