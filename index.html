@@ -8,7 +8,6 @@
     <!-- custom footer margins (investigate!) -->
     <style type="text/css">footer{margin-top:50px;margin-bottom:20px}</style>
     <!-- load recommended fallback font for demo purposes -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic' rel='stylesheet' type='text/css'>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,7 +20,8 @@
     <div class="container">
 
       <div class="page-header" id="banner">
-        <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
             <h1>M8tro <span class="text-muted">&#945;</span></h1>
             <p class="lead">Windows 8 Modern UI<br/>aka &#8220;Metro&#8221;</p>
             <div class="clearfix">
@@ -33,7 +33,18 @@
                   </p>
                   <small>Released under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></small>
             </div>
-        </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="well">
+              <div class="panel-heading">Font Disclaimer</div>
+              <div class="panel-body">
+                <p class="small">This theme was created with Metro UI's <a href="http://www.microsoft.com/typography/fonts/family.aspx?FID=331" target="_blank">Segoe</a> font-family in mind.</p>
+                <p class="small">By default, this font is available on all computers running Windows Vista or later, and smartphones as of Windows Phone 7.</p>
+                <p class="small">You might or might not see this page using a fallback-font. Our fallbacks on mobile are <a href="http://www.google.com/fonts/specimen/Roboto+Condensed">Roboto Condensed</a>, <a href="https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/">Fira Sans</a>, and <a href="http://www.linotype.com/1266/neuehelvetica-family.html">Neue Helvetica</a>, otherwise Helvetica and Arial.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- row -->
       </div>
 
       <!-- Navbar
@@ -946,6 +957,7 @@ while (x < 10) { // "x < 10" is the loop condition
                 <h1>Jumbotron</h1>
                 <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <p><a class="btn btn-default btn-lg">Yes!</a></p>
+                <p><a class="btn btn-link btn-lg">Yes!</a></p>
               </div>
             </div>
           </div>
