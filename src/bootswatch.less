@@ -30,7 +30,6 @@ table a:hover, .table a:hover {
   color: @body-bg;
 }
 
-
 a.text-muted:hover {
   color:inherit;
   text-decoration: underline;
@@ -63,7 +62,7 @@ a.list-group-item:hover, a.list-group-item:focus  {
 td:hover > .fa {color: @body-bg;}
 .fa {color: @m8tro-theme;}
 .fa-home{color:@body-bg;}
-.breadcrumb a{color:@body-bg;font-weight:400}
+.breadcrumb a{color:@link-color;font-weight:400}
 .control-label{font-weight:bolder;font-size: percentage(2 / 3);text-transform: uppercase;padding-right: 10px}
 .label-default {color: @link-color;}
 .panel-footer{font-size:0.8em;}
@@ -127,6 +126,10 @@ background-color: @m8tro-theme;
   background-color: @body-bg;
 }
 
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  color: @link-color;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: @link-color;
   background: @m8tro-theme;
@@ -139,6 +142,28 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: underline;
+}
+
+// .breadcrumb {
+//   background-color: @body-bg;
+// }
+
+// .breadcrumb a,
+// .breadcrumb>li+li:before,
+// .breadcrumb>.active
+// {
+//   color: @link-color;
+// }
+
+.breadcrumb-inverse {
+  background-color: @brand-primary;
+}
+
+.breadcrumb-inverse a,
+.breadcrumb-inverse>li+li:before,
+.breadcrumb-inverse>.active
+{
+  color: @body-bg;
 }
 
 .btn {
