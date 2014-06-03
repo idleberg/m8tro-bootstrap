@@ -71,6 +71,7 @@ td:hover > .fa {color: @body-bg;}
 .dropdown-menu>li>a{font-weight: lighter;text-decoration: none;}
 .dropdown-menu .divider {background-color: @link-color;}
 .bs-component {padding: 10px;}
+.badge{color: @m8tro-theme;}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
   background-color: @link-color;
@@ -144,6 +145,8 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   font-size:0.8em;
 }
 
+.btn.disabled{background-color:@body-bg}
+
 .btn-default {
   color:@link-color;
   border: 1px @gray-light solid;
@@ -156,80 +159,93 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .btn-primary {
-  color:@body-bg;
+  color: @brand-primary;
   border: 1px @brand-primary solid;
+  background-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  color: @brand-primary;
-  background-color: transparent;
+  color: @body-bg;
+  background-color: @brand-primary;
 }
 
 .btn-success {
-  color:@body-bg;
-  border: 1px @brand-success solid;
-}
-
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  color: @brand-success;
+  color:@brand-success;
   border: 1px @brand-success solid;
   background-color: transparent;
 }
 
-.btn-info {
-  color:@body-bg;
-  border: 1px @brand-info solid;
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+  color: @body-bg;
+  background-color: @brand-success;
 }
 
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+.btn-info {
   color: @brand-info;
   border: 1px @brand-info solid;
   background-color: transparent;
 }
 
-.btn-warning {
-  color:@body-bg;
-  border: 1px @brand-warning solid;
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+  color: @body-bg;
+  border: 1px @brand-info solid;
 }
 
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+.btn-warning {
   color: @brand-warning;
   border: 1px @brand-warning solid;
   background-color: transparent;
 }
 
-.btn-danger {
-  color:@body-bg;
-  border: 1px @brand-danger solid;
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+  color: @body-bg;
+  border: 1px @brand-warning solid;
 }
 
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+.btn-danger {
   color: @brand-danger;
   border: 1px @brand-danger solid;
   background-color: transparent;
 }
 
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+  color: @body-bg;
+  border: 1px @brand-danger solid;
+}
+
+.jumbotron .btn:hover {
+  color: @text-color;
+}
+
+.jumbotron .btn-link {
+  color: @body-bg;
+}
+
+.jumbotron .btn-link:hover {
+  color: inherit;
+  text-decoration: underline;
+}
 
 .jumbotron .btn-default {
-  color:@body-bg;
+  color: @body-bg;
   background-color:transparent;
   border: 1px @gray-lighter solid;
 }
 
 .jumbotron .btn-default:hover {
+  color: @body-bg;
   border: 1px @body-bg solid;
 }
 
 .jumbotron .btn-primary {
-  color:@brand-primary;
-  background-color: @body-bg;
+  color: @body-bg;
+  border: 1px @body-bg solid;
 }
 
 .jumbotron .btn-primary:hover {
-  color:@body-bg;
-  background-color:transparent;
-  border: 1px @body-bg solid;
+  background-color: @body-bg;
 }
+
 
 // .jumbotron .btn-success {
 //   color:@text-color;
