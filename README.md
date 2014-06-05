@@ -2,26 +2,43 @@
 
 *This is work in progress*
 
-A Bootstrap theme inspired by Windows [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”). The default font is from the [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) family, which should already be installed on Windows Vista and later. On iOS and Android, the respective default fonts will be used as substitute.
+Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”).
 
 ![Animated Screenshot](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/screenshot.gif)
 
 [Demo Time](http://idleberg.github.io/m8tro-bootstrap/)
 
+
+## Fonts
+
+This theme was created with Modern UI's[Segoe](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) font-family in mind. While this commercial font is largely available available on the Windows platform (Vista and later, Windows Phone), fallback fonts are required for other platforms. 
+
+Font | Platform
+-----|---------
+[Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331)         | Windows Vista (or later), Windows Phone 7 (or later)
+[Roboto Condensed](http://www.google.com/fonts/specimen/Roboto+Condensed) | Android, Web font (optional)
+[Fira Sans](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/)        | Firefox OS
+[Neue Helvetica](http://www.linotype.com/1266/neuehelvetica-family.html)   | iOS, Mac OS X
+
+-[Roboto Condensed](http://www.google.com/fonts/specimen/Roboto+Condensed) on Android, [Fira Sans](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/) on Firefox OS, and Neue Helvetica on iOS. otherwise Helvetica and Arial.
+
+Should you prefer a more consistent font behaviour, [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato) on Google Fonts is a recommended alternative.
+
 ## Usage
 
 ### End user
 
-Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of a Bootstrap 3.1.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases load time.
+Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of your Bootstrap 3.1.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
 
-This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr).
+This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), since it was somewhat designed for that purpose (well, kinda!)
 
 ### Developers
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
-2. Install [Bower](http://bower.io/) components `bower install`
-3. Edit any of the files in the *src*-folder
-4. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
+2. Edit any of the files in the *src*-folder
+3. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
+
+That last step will also install all required [Bower](http://bower.io/) components, the equivalent of a manually typed `bower install`.
 
 ## Customize
 
