@@ -5,8 +5,9 @@
 Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”).
 
 ![Animated Screenshot](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/screenshot.gif)
+*Click to view fullsize*
 
-[Demo Time](http://idleberg.github.io/m8tro-bootstrap/)
+[Watch a Live Demo](http://idleberg.github.io/m8tro-bootstrap/)!
 
 
 ## Fonts
