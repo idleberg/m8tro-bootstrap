@@ -20,8 +20,6 @@ Font | Platform
 [Fira Sans](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/)        | Firefox OS
 [Neue Helvetica](http://www.linotype.com/1266/neuehelvetica-family.html)   | iOS, Mac OS X
 
--[Roboto Condensed](http://www.google.com/fonts/specimen/Roboto+Condensed) on Android, [Fira Sans](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/) on Firefox OS, and Neue Helvetica on iOS. otherwise Helvetica and Arial.
-
 Should you prefer a more consistent font behaviour, [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato) on Google Fonts is a recommended alternative.
 
 ## Usage
