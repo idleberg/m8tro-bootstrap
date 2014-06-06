@@ -62,7 +62,6 @@ a.list-group-item:hover, a.list-group-item:focus  {
 td:hover > .fa {color: @body-bg;}
 .fa {color: @m8tro-theme;}
 .fa-home{color:@body-bg;}
-.breadcrumb a{color:@link-color;font-weight:400}
 .control-label{font-weight:bolder;font-size: percentage(2 / 3);text-transform: uppercase;padding-right: 10px}
 .label-default {color: @link-color;}
 .panel-footer{font-size:0.8em;}
@@ -71,7 +70,6 @@ td:hover > .fa {color: @body-bg;}
 .dropdown-menu .divider {background-color: @link-color;}
 .bs-component {padding: 10px;}
 .badge{color: @m8tro-theme;}
-.breadcrumb .fa {color: @text-color}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
   background-color: @link-color;
@@ -145,6 +143,38 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   text-decoration: underline;
 }
 
+.accent-red {
+  background-color: @a-red;
+}
+
+.accent-orange {
+  background-color: @a-orange;
+}
+
+.accent-yellow {
+  background-color: @a-yellow;
+}
+
+.accent-green {
+  background-color: @a-green;
+}
+
+.accent-aqua {
+  background-color: @a-aqua;
+}
+
+.accent-blue {
+  background-color: @a-blue;
+}
+
+.accent-purple {
+  background-color: @a-purple;
+}
+
+.accent-brown {
+  background-color: @a-brown;
+}
+
 // .breadcrumb {
 //   background-color: @body-bg;
 // }
@@ -158,7 +188,13 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .breadcrumb a {
   color: @link-color;
+  font-weight:400
 }
+
+.breadcrumb .fa {
+  color: @text-color;
+}
+
 
 .breadcrumb-inverse {
   background-color: @brand-primary;
@@ -168,6 +204,10 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 .breadcrumb-inverse>li+li:before,
 .breadcrumb-inverse>.active
 {
+  color: @body-bg;
+}
+
+.breadcrumb-inverse .fa {
   color: @body-bg;
 }
 
