@@ -4,4 +4,6 @@ _site
 bower_components
 build
 components
+Gruntfile.js
 node_modules
+package.json
