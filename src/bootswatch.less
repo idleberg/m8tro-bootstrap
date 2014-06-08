@@ -10,6 +10,8 @@ a, .breadcrumb a:hover{
   text-decoration: underline;
 }
 
+input, textarea, keygen, select, button {border-radius:0}
+
 a.btn, .pager a, a.navbar-brand, .breadcrumb a, a.list-group-item{
   text-decoration: none;
 }
@@ -603,4 +605,32 @@ input, {
 
 .well {
   .box-shadow(none);
+}
+
+// Overwrite default WTF Forms styles
+
+.checkbox .control-indicator {
+  border-radius: 0;
+}
+
+.control-indicator {
+  color: @body-bg;
+  text-align: center;
+  background-color: @body-bg;
+  background-size: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px @gray-light solid;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width:20px;
+  height:20px;
+}
+
+.control input:checked ~ .control-indicator {
+  color: @link-color;
+  background-color: @body-bg;
+  border: 1px @link-color solid;
 }
