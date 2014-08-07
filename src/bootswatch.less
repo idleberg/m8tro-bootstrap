@@ -200,63 +200,63 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-  color:@link-color;
+  color: @link-color;
   border: 1px @link-color solid;
   background-color: transparent;
 }
 
 .btn-primary {
   color: @brand-primary;
-  border: 1px @brand-primary solid;
+  border: 1px darken(@brand-primary, 20%) solid;
   background-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  color: @body-bg;
-  background-color: @brand-primary;
+  color: @brand-primary;
+  border: 1px @brand-primary solid;
 }
 
 .btn-success {
   color:@brand-success;
-  border: 1px @brand-success solid;
+  border: 1px darken(@brand-success, 20%) solid;
   background-color: transparent;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  color: @body-bg;
-  background-color: @brand-success;
+  color: @brand-success;
+  border: 1px @brand-success solid;
 }
 
 .btn-info {
   color: @brand-info;
-  border: 1px @brand-info solid;
+  border: 1px darken(@brand-info, 20%) solid;
   background-color: transparent;
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-  color: @body-bg;
+  color: @brand-info;
   border: 1px @brand-info solid;
 }
 
 .btn-warning {
   color: @brand-warning;
-  border: 1px @brand-warning solid;
+  border: 1px darken(@brand-warning, 20%) solid;
   background-color: transparent;
 }
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
-  color: @body-bg;
+  color: @brand-warning;
   border: 1px @brand-warning solid;
 }
 
 .btn-danger {
   color: @brand-danger;
-  border: 1px @brand-danger solid;
+  border: 1px darken(@brand-danger, 20%) solid;
   background-color: transparent;
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
-  color: @body-bg;
+  color: @brand-danger;
   border: 1px @brand-danger solid;
 }
 
@@ -285,38 +285,59 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron .btn-primary {
-  color: @body-bg;
-  border: 1px @body-bg solid;
+  color: @brand-primary;
+  background-color:transparent;
+  border: 1px @brand-primary solid;
 }
 
 .jumbotron .btn-primary:hover {
-  background-color: @body-bg;
+  color: @brand-primary;
+  border: 1px @body-bg solid;
 }
 
+.jumbotron .btn-success {
+  color: @brand-success;
+  background-color:transparent;
+  border: 1px @brand-success solid;
+}
 
-// .jumbotron .btn-success {
-//   color:@text-color;
-//   background-color:@brand-success;
-//   border: 1px @brand-success solid;
-// }
+.jumbotron .btn-success:hover {
+  color: @brand-success;
+  border: 1px @body-bg solid;
+}
 
-// .jumbotron .btn-info {
-//   color:@text-color;
-//   background-color:@brand-info;
-//   border: 1px @brand-info solid;
-// }
+.jumbotron .btn-info {
+  color: @brand-info;
+  background-color:transparent;
+  border: 1px @brand-info solid;
+}
 
-// .jumbotron .btn-warning {
-//   color:@text-color;
-//   background-color:@brand-warning;
-//   border: 1px @brand-warning solid;
-// }
+.jumbotron .btn-info:hover {
+  color: @brand-info;
+  border: 1px @body-bg solid;
+}
 
-// .jumbotron .btn-danger {
-//   color:@text-color;
-//   background-color:@brand-danger;
-//   border: 1px @brand-danger solid;
-// }
+.jumbotron .btn-warning {
+  color: @brand-warning;
+  background-color:transparent;
+  border: 1px @brand-warning solid;
+}
+
+.jumbotron .btn-warning:hover {
+  color: @brand-warning;
+  border: 1px @body-bg solid;
+}
+
+.jumbotron .btn-danger {
+  color: @brand-danger;
+  background-color:transparent;
+  border: 1px @brand-danger solid;
+}
+
+.jumbotron .btn-danger:hover {
+  color: @brand-danger;
+  border: 1px @body-bg solid;
+}
 
 .progress-striped .progress-bar {
   background: -webkit-linear-gradient(0deg, @text-color 50%, @body-bg 50%);
