@@ -260,87 +260,90 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   border: 1px @brand-danger solid;
 }
 
-.jumbotron .btn:hover {
-  color: @text-color;
+
+.jumbotron {
+  .btn:hover {
+    color: @text-color;
+  }
+
+  .btn-link {
+    color: @body-bg;
+  }
+
+  .btn-link:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .btn-default {
+    color: @body-bg;
+    background-color: @text-color;
+    border: 1px @body-bg solid;
+  }
+
+  .btn-default:hover {
+    color: @link-color;
+    background-color:@body-bg;
+    border: 1px @gray-lighter solid;
+  }
+
+  .btn-primary {
+    color: @brand-primary;
+    background-color:transparent;
+    border: 1px @brand-primary solid;
+  }
+
+  .btn-primary:hover {
+    color: @text-color;
+    background-color:@brand-primary;
+  }
+
+  .btn-success {
+    color: @brand-success;
+    background-color:transparent;
+    border: 1px @brand-success solid;
+  }
+
+  .btn-success:hover {
+    color: @text-color;
+    background-color:@brand-success;
+  }
+
+  .btn-info {
+    color: @brand-info;
+    background-color:transparent;
+    border: 1px @brand-info solid;
+  }
+
+  .btn-info:hover {
+    color: @text-color;
+    background-color:@brand-info;
+  }
+
+  .btn-warning {
+    color: @brand-warning;
+    background-color:transparent;
+    border: 1px @brand-warning solid;
+  }
+
+  .btn-warning:hover {
+    color: @text-color;
+    background-color:@brand-warning;
+  }
+
+  .btn-danger {
+    color: @brand-danger;
+    background-color:transparent;
+    border: 1px @brand-danger solid;
+  }
 }
 
-.jumbotron .btn-link {
-  color: @body-bg;
-}
-
-.jumbotron .btn-link:hover {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.jumbotron .btn-default {
-  color: @body-bg;
-  background-color: @text-color;
-  border: 1px @body-bg solid;
-}
-
-.jumbotron .btn-default:hover {
-  color: @link-color;
-  background-color:@body-bg;
-  border: 1px @gray-lighter solid;
-}
-
-.jumbotron .btn-primary {
-  color: @brand-primary;
-  background-color:transparent;
-  border: 1px @brand-primary solid;
-}
-
-.jumbotron .btn-primary:hover {
-  color: @text-color;
-  background-color:@brand-primary;
-}
-
-.jumbotron .btn-success {
-  color: @brand-success;
-  background-color:transparent;
-  border: 1px @brand-success solid;
-}
-
-.jumbotron .btn-success:hover {
-  color: @text-color;
-  background-color:@brand-success;
-}
-
-.jumbotron .btn-info {
-  color: @brand-info;
-  background-color:transparent;
-  border: 1px @brand-info solid;
-}
-
-.jumbotron .btn-info:hover {
-  color: @text-color;
-  background-color:@brand-info;
-}
-
-.jumbotron .btn-warning {
-  color: @brand-warning;
-  background-color:transparent;
-  border: 1px @brand-warning solid;
-}
-
-.jumbotron .btn-warning:hover {
-  color: @text-color;
-  background-color:@brand-warning;
-}
-
-.jumbotron .btn-danger {
-  color: @brand-danger;
-  background-color:transparent;
-  border: 1px @brand-danger solid;
-}
-
-.jumbotron .btn-danger:hover {
+.btn-danger:hover {
   color: @text-color;
   background-color:@brand-danger;
 }
 
-.jumbotron .close {
+.modal .close {
     color: @gray-light;
     text-decoration: none;
     opacity: 1;
