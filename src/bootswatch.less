@@ -274,14 +274,15 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron .btn-default {
-  color: @link-color;
-  background-color:@body-bg;
-  border: 1px @gray-lighter solid;
+  color: @body-bg;
+  background-color: @text-color;
+  border: 1px @body-bg solid;
 }
 
 .jumbotron .btn-default:hover {
-  color: @body-bg;
-  border: 1px @body-bg solid;
+  color: @link-color;
+  background-color:@body-bg;
+  border: 1px @gray-lighter solid;
 }
 
 .jumbotron .btn-primary {
@@ -291,19 +292,19 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron .btn-primary:hover {
-  color: @brand-primary;
-  border: 1px @body-bg solid;
+  color: @text-color;
+  background-color:@brand-primary;
 }
 
 .jumbotron .btn-success {
-  color: @text-color
-  background-color:@brand-success;
+  color: @brand-success;
+  background-color:transparent;
   border: 1px @brand-success solid;
 }
 
 .jumbotron .btn-success:hover {
-  color: @brand-success;
-  border: 1px @body-bg solid;
+  color: @text-color;
+  background-color:@brand-success;
 }
 
 .jumbotron .btn-info {
@@ -313,8 +314,8 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron .btn-info:hover {
-  color: @brand-info;
-  border: 1px @body-bg solid;
+  color: @text-color;
+  background-color:@brand-info;
 }
 
 .jumbotron .btn-warning {
@@ -324,19 +325,19 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron .btn-warning:hover {
-  color: @brand-warning;
-  border: 1px @body-bg solid;
+  color: @text-color;
+  background-color:@brand-warning;
 }
 
 .jumbotron .btn-danger {
-  color: @text-color@brand-danger;
-  background-color:@brand-danger;
+  color: @brand-danger;
+  background-color:transparent;
   border: 1px @brand-danger solid;
 }
 
 .jumbotron .btn-danger:hover {
-  color: @brand-danger;
-  border: 1px @body-bg solid;
+  color: @text-color;
+  background-color:@brand-danger;
 }
 
 .progress-striped .progress-bar {
@@ -594,8 +595,14 @@ input, {
 
   a,
   .alert-link {
-    color: #fff;
+    color: @body-bg;
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: @link-color;
+      opacity: 1;
+    }
   }
 
   .close {
@@ -605,7 +612,7 @@ input, {
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: @link-color;
       opacity: 1;
     }
   }
