@@ -340,6 +340,18 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   background-color:@brand-danger;
 }
 
+.jumbotron .close {
+    color: @gray-light;
+    text-decoration: none;
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      color: @link-color;
+      opacity: 1;
+    }
+  }
+
 .progress-striped .progress-bar {
   background: -webkit-linear-gradient(0deg, @text-color 50%, @body-bg 50%);
   background-size: 4px 100%;
@@ -595,18 +607,18 @@ input, {
 
   a,
   .alert-link {
-    color: @link-color;
+    color: @body-bg;
     text-decoration: underline;
 
     &:hover,
     &:focus {
-      color: @body-bg;
+      color: @link-color;
       opacity: 1;
     }
   }
 
   .close {
-    color: @body-bg;
+    color: @gray-dark;
     text-decoration: none;
     opacity: 1;
 
