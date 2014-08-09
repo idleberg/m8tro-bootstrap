@@ -1,7 +1,12 @@
 #!/bin/bash
-VERSION=0.2
+VERSION=0.3
 echo $'\n'm8ke-script $VERSION
 echo ===============
+
+function die(){
+ echo $1
+ exit 1
+}
 
 if [ -e 'bower_components' ]
 then
@@ -9,7 +14,7 @@ then
 else
 	echo Bower components not found
 	echo Downloading components
-	bower install
+	bower install || die 'You need to install Bower before you can continue (http://bower.io/)'
 fi
 
 if [ -z $1 ]
