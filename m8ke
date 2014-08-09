@@ -1,12 +1,30 @@
 #!/bin/bash
-VERSION=0.3
-echo $'\n'm8ke-script $VERSION
-echo ===============
 
-function die(){
- echo $1
- exit 1
+VERSION=0.3.1
+set -e
+
+# Functions
+function npm_error(){
+    echo 'You need to install Node before we can continue (http://nodejs.org/)'
+    exit 1
 }
+
+function bower_error(){
+    while true; do
+        read -p "Bower is not installed. Do you want to install it now? (y/n) " yn
+        case $yn in
+            [Yy*]* ) npmx install bower || npm_error; break;;
+            [Nn]* ) echo 'Aborted by user.'; exit;;
+        esac
+    done
+
+    echo 'done that'
+    exit
+}
+
+# Let's go
+echo $'\n'm8ke-script $VERSION
+echo =================
 
 if [ -e 'bower_components' ]
 then
@@ -14,7 +32,7 @@ then
 else
 	echo Bower components not found
 	echo Downloading components
-	bower install || die 'You need to install Bower before you can continue (http://bower.io/)'
+	bower install || bower_error
 fi
 
 if [ -z $1 ]
