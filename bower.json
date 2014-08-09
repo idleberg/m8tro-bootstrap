@@ -11,8 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "~3.2.0",
-    "font-awesome": "~4.1.0",
+    "bootstrap": "~3.2.0"
   },
   "devDependencies": {
     "html5shiv": "~3.7.0",
