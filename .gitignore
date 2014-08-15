@@ -1,5 +1,6 @@
-dist/fonts/
 bower_components/
+dist/fonts/
+dist/js/jquery.min.js
 node_modules/
 npm-debug.log
 todo.md
