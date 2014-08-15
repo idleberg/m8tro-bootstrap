@@ -45,7 +45,7 @@ The provided `gulpfile.js` will serve as our primary build tool. In order to use
     # install and update Bower components
     bower install; bower update
 
-Several gulp tasks are now available. Use `gulp make` to build OGraphr or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
+Several gulp tasks are now available. Use `gulp make` to build the style sheet or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
 
 #### Bash script
 
