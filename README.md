@@ -32,6 +32,23 @@ This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootst
 
 ### Developers
 
+#### Gulp task
+
+The provided `gulpfile.js` will serve as our primary build tool. In order to use it, we need to have [Node.js](http://nodejs.org/download/) and [Bower](http://bower.io/) installed.
+
+    # install Bower and Gulp globally
+    npm install bower gulp -g
+
+    # install Node dependencies
+    npm install
+
+    # install and update Bower components
+    bower install; bower update
+
+Several gulp tasks are now available. Use `gulp make` to build OGraphr or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
+
+#### Bash script
+
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
 2. Edit any of the files in the *src*-folder
 3. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
