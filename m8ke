@@ -42,7 +42,7 @@ then
 		THEME_BASE=$(basename $THEME)
 		echo $'\n'$THEME_BASE/build.less found
 		echo Compiling $THEME_BASE.min.css, please wait $'\n'
-		lessc -x src/themes/$THEME_BASE/build.less dist/css/$THEME_BASE.min.css
+		lessc -x src/themes/$THEME_BASE/build.less dist/css/bootstrap.min.css
 	done
 else
 	THEME=$1
@@ -58,7 +58,8 @@ then
 fi
 
 echo "Copying JavaScript"
-cp -f ./bower_components/bootstrap/dist/js/bootstrap.min.js ./dist/js/$THEME_BASE.min.js
+cp -f ./bower_components/bootstrap/dist/js/bootstrap.min.js ./dist/js/
+cp -f ./bower_components/jquery/dist/jquery.min.js ./dist/js/
 
 if [ ! -e 'dist/fonts/' ]
 then

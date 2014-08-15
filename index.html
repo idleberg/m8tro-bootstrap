@@ -5,11 +5,13 @@
     <title>M8tro Bootstrap Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <!-- <link rel="stylesheet" href="http://wtfforms.com/wtf-forms.css"> -->
-    <link rel="stylesheet" href="dist/css/m8tro.min.css">
     <!-- custom footer margins (investigate!) -->
     <style type="text/css">footer{margin-top:50px;margin-bottom:20px}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.modal-dialog{width:inherit;margin:0}</style>
-    <!-- load recommended fallback font for demo purposes -->
-    <link href="dist/css/font-awesome.min.css" rel="stylesheet">
+    <!-- inject:css -->
+      <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- endinject -->
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -1241,8 +1243,9 @@ while (x < 10) { // "x < 10" is the loop condition
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <!-- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
-    <script src="dist/js/m8tro.min.js"></script>
+    <!-- inject:js -->
+      <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="dist/js/bootstrap.min.js"></script>
+    <!-- endinject -->
   </body>
 </html>
