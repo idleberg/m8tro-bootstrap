@@ -1,4 +1,5 @@
 bower_components/
+dist/css/font-awesome.min.css
 dist/fonts/
 dist/js/jquery.min.js
 node_modules/
