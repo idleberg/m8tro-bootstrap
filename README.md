@@ -27,7 +27,7 @@ Should you prefer a more consistent font behaviour, [Lato](https://www.google.co
 
 ### End user
 
-Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/bootstrap-theme.min.css) and use it in place of your Bootstrap 3.3.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
+Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css) and use it in place of your Bootstrap 3.3.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
 
 This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), since it was somewhat designed for that purpose (well, kinda!)
 

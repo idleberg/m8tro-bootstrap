@@ -69,7 +69,7 @@ gulp.task('less', ['clean'], function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(concat('bootstrap-theme.min.css'))
+    .pipe(concat('m8tro.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('dist/css/'));
 });

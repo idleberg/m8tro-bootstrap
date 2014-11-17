@@ -42,7 +42,7 @@ then
 		THEME_BASE=$(basename $THEME)
 		echo $'\n'$THEME_BASE/build.less found
 		echo Compiling $THEME_BASE.min.css, please wait $'\n'
-		lessc -x src/themes/$THEME_BASE/build.less dist/css/bootstrap-theme.min.css
+		lessc -x src/themes/$THEME_BASE/build.less dist/css/m8tro.min.css
 	done
 else
 	THEME=$1
