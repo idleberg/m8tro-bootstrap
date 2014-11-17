@@ -9,6 +9,7 @@
 var del     = require('del');
 var concat  = require('gulp-concat');
 var csslint = require('gulp-csslint');
+var cssmin  = require('gulp-cssmin');
 var gulp    = require('gulp');
 var htmlval = require('gulp-html-validator');
 var inject  = require('gulp-inject');
@@ -69,11 +70,12 @@ gulp.task('less', ['clean'], function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(concat('bootstrap-theme.min.css'))
+    .pipe(cssmin())
     .pipe(gulp.dest('dist/css/'));
 });
 
 // Copy tasks
-gulp.task('fontawesome', function() {
+gulp.task('fontawesome', ['clean'], function() {
   gulp.src([
       'bower_components/fontawesome/css/font-awesome.min.css'
     ])
@@ -88,7 +90,7 @@ gulp.task('fontawesome', function() {
     .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('bootstrapjs', function() {
+gulp.task('bootstrapjs', ['clean'], function() {
   gulp.src([
       'bower_components/bootstrap/dist/js/bootstrap.min.js'
     ])
@@ -98,7 +100,7 @@ gulp.task('bootstrapjs', function() {
 // Cleaning task
 gulp.task('clean', function () {
     del([
-      'dist/*'
+      'dist/'
     ])
 });
 
