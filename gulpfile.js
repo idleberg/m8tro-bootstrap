@@ -6,10 +6,10 @@
   * Licensed under the MIT license.
   */
 
-var del     = require('del');
 var concat  = require('gulp-concat');
 var csslint = require('gulp-csslint');
 var cssmin  = require('gulp-cssmin');
+var del     = require('del');
 var gulp    = require('gulp');
 var htmlval = require('gulp-html-validator');
 var inject  = require('gulp-inject');
