@@ -7,7 +7,7 @@
   */
 
 var bower   = require('gulp-bower');
-var clean   = require('gulp-rimraf');
+var del     = require('del');
 var concat  = require('gulp-concat');
 var csslint = require('gulp-csslint');
 var gulp    = require('gulp');
@@ -103,10 +103,9 @@ gulp.task('bootstrapjs', function() {
 
 // Cleaning task
 gulp.task('clean', function () {
-  return gulp.src([
+    del([
       './dist/*'
-    ], {read: false})
-    .pipe(clean());
+    ])
 });
 
 // Injection task
