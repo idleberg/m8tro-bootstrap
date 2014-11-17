@@ -69,7 +69,7 @@ gulp.task('less', ['clean'], function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(concat('bootstrap-theme.min.css'))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css/'));
 });
 
 // Copy tasks
@@ -77,22 +77,22 @@ gulp.task('fontawesome', function() {
   gulp.src([
       'bower_components/fontawesome/css/font-awesome.min.css'
     ])
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css/'));
   gulp.src([
       'bower_components/fontawesome/fonts/*'
     ])
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('dist/fonts/'));
   gulp.src([
       'bower_components/jquery/dist/jquery.min.js'
     ])
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('bootstrapjs', function() {
   gulp.src([
       'bower_components/bootstrap/dist/js/bootstrap.min.js'
     ])
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 // Cleaning task
