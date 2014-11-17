@@ -10,7 +10,6 @@ Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.co
 
 *Watch a [live demo](http://idleberg.github.io/m8tro-bootstrap/)!*
 
-
 ## Fonts
 
 This theme was created with Modern UI's [Segoe](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) font-family in mind. While this commercial font is largely available available on the Windows platform (Vista and later, Windows Phone), fallback fonts are required for other platforms. 
@@ -28,7 +27,7 @@ Should you prefer a more consistent font behaviour, [Lato](https://www.google.co
 
 ### End user
 
-Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of your Bootstrap 3.2.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
+Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/m8tro.min.css) and use it in place of your Bootstrap 3.3.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
 
 This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), since it was somewhat designed for that purpose (well, kinda!)
 
@@ -38,14 +37,13 @@ This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootst
 
 The provided `gulpfile.js` will serve as our primary build tool. In order to use it, we need to have [Node.js](http://nodejs.org/download/) and [Bower](http://bower.io/) installed.
 
-    # install Bower and Gulp globally
-    npm install bower gulp -g
+```bash
+# install Bower and Gulp globally
+npm install bower gulp -g
 
-    # install Node dependencies
-    npm install
-
-    # install and update Bower components
-    bower install; bower update
+# install Node dependencies
+npm install
+```
 
 Several gulp tasks are now available. Use `gulp make` to build the style sheet or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
 
