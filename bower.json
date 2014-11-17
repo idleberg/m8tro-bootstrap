@@ -16,7 +16,7 @@
     "fontawesome": "^4.2.0"
   },
   "devDependencies": {
-    "html5shiv": "~3.7.0",
+    "html5shiv": "~3.7.2",
     "respond":   "~1.4.2"
   },
   "private": true
