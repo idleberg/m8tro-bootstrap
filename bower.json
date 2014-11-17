@@ -1,7 +1,7 @@
 {
   "name": "m8tro-devkit",
-  "description": "A Microsoft Modern UI-inspired Bootstrap 3.2 theme",
-  "version": "3.2.0",
+  "description": "A Microsoft Modern UI-inspired Bootstrap 3.3 theme",
+  "version": "3.3.1",
   "private": true,
   "author": "Jan T. Sott",
   "homepage": "http://github.com/idleberg/metro-bootstrap",
@@ -12,8 +12,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap":   "~3.2.0",
-    "fontawesome": "~4.1.0"
+    "bootstrap":   "^3.3.1",
+    "fontawesome": "^4.2.0"
   },
   "devDependencies": {
     "html5shiv": "~3.7.0",
