@@ -50,8 +50,9 @@ Several gulp tasks are now available. Use `gulp make` to build the style sheet o
 #### Bash script
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
-2. Edit any of the files in the *src*-folder
-3. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
+2. Install [Less](http://lesscss.org/) compiler `npm install less -g`
+3. Edit any of the files in the *src*-folder
+4. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
 
 That last step will also install all required [Bower](http://bower.io/) components, the equivalent of a manually typed `bower install`.
 
