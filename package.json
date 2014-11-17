@@ -29,7 +29,6 @@
     "url": "https://github.com/idleberg/m8tro-bootstrap/issues"
   },
    "scripts": {
-    "postinstall": "bower install",
-    "test": "gulp travis"
+    "postinstall": "bower install"
   }
 }
