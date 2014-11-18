@@ -200,6 +200,9 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .btn, .btn:hover, .btn:focus, .btn:active{
   background-color: transparent;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .btn.disabled{background-color:@body-bg}
