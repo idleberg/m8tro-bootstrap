@@ -1,6 +1,6 @@
 {
   "name": "m8tro-devkit",
-  "description": "A Microsoft Modern UI-inspired Bootstrap 3.3 theme",
+  "description": "A Microsoft Modern UI-inspired Bootstrap theme",
   "version": "3.3.1",
   "private": true,
   "devDependencies": {
@@ -17,7 +17,7 @@
     "gulp-uglify":         "^1.0.1",
     "gulp-util":           "^3.0.1",
     "gulp-watch":          "^1.2.0",
-    "less":                "^1.7.5",
+    "less":                "^2.0.0",
     "path":                "^0.4.9"
   },
   "repository": {

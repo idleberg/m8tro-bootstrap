@@ -1,6 +1,6 @@
 {
   "name": "m8tro-devkit",
-  "description": "A Microsoft Modern UI-inspired Bootstrap 3.3 theme",
+  "description": "A Microsoft Modern UI-inspired Bootstrap theme",
   "version": "3.3.1",
   "private": true,
   "author": "Jan T. Sott",
@@ -16,8 +16,8 @@
     "fontawesome": "^4.2.0"
   },
   "devDependencies": {
-    "html5shiv": "~3.7.2",
-    "respond":   "~1.4.2"
+    "html5shiv": "^3.7.2",
+    "respond":   "^1.4.2"
   },
   "private": true
 }
