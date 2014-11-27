@@ -1,5 +1,5 @@
  /*
-  * m8tro-devkit
+  * m8tro-bootstrap
   * https://github.com/idleberg/m8tro-bootstrap
   *
   * Copyright (c) 2014 Jan T. Sott
