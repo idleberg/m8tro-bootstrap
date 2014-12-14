@@ -16,7 +16,7 @@ Font | Platform
 -----|---------
 [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331)         | Windows Vista (or later), Windows Phone 7 (or later)
 [Roboto Condensed](http://www.google.com/fonts/specimen/Roboto+Condensed) | Android, Web font (optional)
-[Fira Sans](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/)        | Firefox OS
+[Fira Sans](http://mozilla.github.io/Fira/)        | Firefox OS, Web font ([optional](http://www.google.com/fonts/specimen/Fira+Sans))
 [Neue Helvetica](http://www.linotype.com/1266/neuehelvetica-family.html)   | iOS, Mac OS X
 
 Should you prefer a more consistent font behaviour, [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato) on Google Fonts is a recommended alternative.
