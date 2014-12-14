@@ -21,17 +21,27 @@ Font | Platform
 
 Should you prefer a more consistent font behaviour, [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato) on Google Fonts is a recommended alternative.
 
-## Usage
+## Installation
 
-### End user
+Style-sheets are meant to be used instead of `bootstrap.min.css`, there's no need to include both files.
 
-Download a copy of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css) and use it in place of your Bootstrap 3.3.1 (or compatible) style-sheet. It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
+### Bower
 
-This theme can be used with [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), since it was somewhat designed for that purpose (well, kinda!)
+Pre-compiled CSS files can be installed using [Bower](http://bower.io/)
 
-### Developers
+    bower install m8tro-bootstrap
 
-#### Gulp task
+### Manual Installation
+
+Use the style-sheets from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or get the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
+
+### CDN
+
+There is currently no officially supported CDN. Also, it is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
+
+## Developers
+
+### Gulp task
 
 The provided `gulpfile.js` will serve as our primary build tool. In order to use it, we need to have [Node.js](http://nodejs.org/download/) and [Bower](http://bower.io/) installed.
 
@@ -45,7 +55,7 @@ npm install
 
 Several gulp tasks are now available. Use `gulp make` to build the style sheet or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
 
-#### Bash script
+### Bash script
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
 2. Install [Less](http://lesscss.org/) compiler `npm install less -g`
