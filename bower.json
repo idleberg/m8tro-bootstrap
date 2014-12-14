@@ -1,16 +1,19 @@
 {
-  "name": "m8tro-bootstrap",
-  "description": "A Microsoft Modern UI-inspired Bootstrap theme",
-  "version": "3.3.1-alpha5",
-  "author": "Jan T. Sott",
-  "homepage": "http://idleberg.github.io/m8tro-bootstrap/",
+  "name":        "m8tro-bootstrap",
+  "description": "Modern UI-inspired Bootstrap theme",
+  "version":     "3.3.1-alpha5",
+  "author":      "Jan T. Sott",
+  "homepage":    "http://idleberg.github.io/m8tro-bootstrap/",
 
   "repository": {
     "type": "git",
     "url": "git://github.com/idleberg/m8tro-bootstrap.git"
+
   },
   "license": "MIT",
+  "private": false,
   "main": "dist/css/m8tro.min.css",
+
   "ignore": [
     ".gitignore",
     ".travis.yml",
@@ -25,8 +28,10 @@
     "package.json",
     "src"
   ],
+
   "dependencies": {
   },
+
   "devDependencies": {
     "bootstrap":   "^3.3.1",
     "fontawesome": "^4.2.0",
