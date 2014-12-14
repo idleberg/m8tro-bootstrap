@@ -69,6 +69,8 @@ gulp.task('less', ['clean'], function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
+    .pipe(concat('m8tro.css'))
+    .pipe(gulp.dest('dist/css/'))
     .pipe(concat('m8tro.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('dist/css/'));
@@ -80,19 +82,21 @@ gulp.task('fontawesome', ['clean'], function() {
       'bower_components/fontawesome/css/font-awesome.min.css'
     ])
     .pipe(gulp.dest('dist/css/'));
+    
   gulp.src([
       'bower_components/fontawesome/fonts/*'
     ])
     .pipe(gulp.dest('dist/fonts/'));
-  gulp.src([
-      'bower_components/jquery/dist/jquery.min.js'
-    ])
-    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('bootstrapjs', ['clean'], function() {
   gulp.src([
       'bower_components/bootstrap/dist/js/bootstrap.min.js'
+    ])
+    .pipe(gulp.dest('dist/js/'));
+
+    gulp.src([
+      'bower_components/jquery/dist/jquery.min.js'
     ])
     .pipe(gulp.dest('dist/js/'));
 });
