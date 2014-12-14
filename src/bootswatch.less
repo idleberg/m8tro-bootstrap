@@ -137,13 +137,26 @@ background-color: @m8tro-theme;
   background-color: @body-bg;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+.nav-tabs>li.active>a{
   color: @link-color;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+.nav-tabs>li>a,.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  color: @link-color;
+}
+
+.nav-pills>li.active>a {
   color: @link-color;
   background: @m8tro-theme;
+}
+
+.nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: @link-color;
+  background: @m8tro-theme;
+}
+
+.nav-pills>li>a {
+  color: @link-color;
 }
 
 a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
