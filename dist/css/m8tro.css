@@ -6297,78 +6297,6 @@ button.close {
  *  Author: Jan T. Sott
  *     URL: http://github.com/idleberg/m8tro-bootstrap
  */
-.wp-amber {
-  background-color: #f0a30a;
-}
-.wp-beige {
-  background-color: #87794e;
-}
-.wp-brown {
-  background-color: #825a2c;
-}
-.wp-cobalt {
-  background-color: #0050ef;
-}
-.wp-crimson {
-  background-color: #a20025;
-}
-.wp-cyan {
-  background-color: #1ba1e2;
-}
-.wp-emerald {
-  background-color: #008a00;
-}
-.wp-gray {
-  background-color: #434542;
-}
-.wp-gray-dark {
-  background-color: #1f1f1f;
-}
-.wp-gray-light {
-  background-color: #bebebe;
-}
-.wp-green {
-  background-color: #60a917;
-}
-.wp-indigo {
-  background-color: #6a00ff;
-}
-.wp-lime {
-  background-color: #a4c400;
-}
-.wp-magenta {
-  background-color: #d80073;
-}
-.wp-mauve {
-  background-color: #76608a;
-}
-.wp-olive {
-  background-color: #6d8764;
-}
-.wp-orange {
-  background-color: #fa6800;
-}
-.wp-pink {
-  background-color: #f472d0;
-}
-.wp-red {
-  background-color: #e51400;
-}
-.wp-sienna {
-  background-color: #7a3b3f;
-}
-.wp-steel {
-  background-color: #647687;
-}
-.wp-teal {
-  background-color: #00aba9;
-}
-.wp-violet {
-  background-color: #aa00ff;
-}
-.wp-yellow {
-  background-color: #d8c100;
-}
 /* FOCOLTONE 1076 */
 /* FOCOLTONE 2334 */
 /* FOCOLTONE 1155 */
@@ -7036,6 +6964,102 @@ input:focus {
 .well {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.bg-wp-amber {
+  background-color: #f0a30a;
+}
+.bg-wp-beige {
+  background-color: #87794e;
+}
+.bg-wp-brown {
+  background-color: #825a2c;
+}
+.bg-wp-cobalt {
+  background-color: #0050ef;
+}
+.bg-wp-crimson {
+  background-color: #a20025;
+}
+.bg-wp-cyan {
+  background-color: #1ba1e2;
+}
+.bg-wp-emerald {
+  background-color: #008a00;
+}
+.bg-wp-gray {
+  background-color: #434542;
+}
+.bg-wp-gray-dark {
+  background-color: #1f1f1f;
+}
+.bg-wp-gray-light {
+  background-color: #bebebe;
+}
+.bg-wp-green {
+  background-color: #60a917;
+}
+.bg-wp-indigo {
+  background-color: #6a00ff;
+}
+.bg-wp-lime {
+  background-color: #a4c400;
+}
+.bg-wp-magenta {
+  background-color: #d80073;
+}
+.bg-wp-mauve {
+  background-color: #76608a;
+}
+.bg-wp-olive {
+  background-color: #6d8764;
+}
+.bg-wp-orange {
+  background-color: #fa6800;
+}
+.bg-wp-pink {
+  background-color: #f472d0;
+}
+.bg-wp-red {
+  background-color: #e51400;
+}
+.bg-wp-sienna {
+  background-color: #7a3b3f;
+}
+.bg-wp-steel {
+  background-color: #647687;
+}
+.bg-wp-teal {
+  background-color: #00aba9;
+}
+.bg-wp-violet {
+  background-color: #aa00ff;
+}
+.bg-wp-yellow {
+  background-color: #d8c100;
+}
+.bg-m8tro-red {
+  background-color: #ed1c24;
+}
+.bg-m8tro-orange {
+  background-color: #f36f21;
+}
+.bg-m8tro-yellow {
+  background-color: #faa61a;
+}
+.bg-m8tro-green {
+  background-color: #80c342;
+}
+.bg-m8tro-aqua {
+  background-color: #00b3b5;
+}
+.bg-m8tro-blue {
+  background-color: #3c9cd6;
+}
+.bg-m8tro-purple {
+  background-color: #5c2d91;
+}
+.bg-m8tro-brown {
+  background-color: #8c693a;
 }
 .checkbox .control-indicator {
   border-radius: 0;
