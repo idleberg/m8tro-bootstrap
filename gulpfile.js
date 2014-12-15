@@ -104,7 +104,7 @@ gulp.task('bootstrapjs', ['clean'], function() {
 // Cleaning task
 gulp.task('clean', function () {
     return del([
-      'dist/**/*'
+      'dist/'
     ])
 });
 
