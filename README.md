@@ -19,8 +19,6 @@ Font | Platform
 [Fira Sans](http://mozilla.github.io/Fira/)        | Firefox OS, Web font ([optional](http://www.google.com/fonts/specimen/Fira+Sans))
 [Neue Helvetica](http://www.linotype.com/1266/neuehelvetica-family.html)   | iOS, Mac OS X
 
-Should you prefer a more consistent font behaviour, [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato) on Google Fonts is a recommended alternative.
-
 ## Installation
 
 Style-sheets are meant to be used instead of `bootstrap.min.css`, there's no need to include both files.
