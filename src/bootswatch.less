@@ -212,16 +212,19 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .btn, .btn:hover, .btn:focus, .btn:active{
-  background-color: transparent;
+  background-color: @body-bg;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.btn.disabled{background-color:@body-bg}
+.btn.disabled{
+  background-color: inherit;
+  border: transparent;
+}
 
 .btn-default {
-  color:@link-color;
+  color: @link-color;
   border: 1px @gray-light solid;
 }
 
@@ -321,6 +324,11 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .jumbotron {
+
+  .btn{
+    background-color:inherit;
+  }
+
   .btn:hover {
     color: @text-color;
   }
