@@ -24,11 +24,11 @@
     "gulp-inject":         "^1.0.2",
     "gulp-jshint":         "^1.9.0",
     "gulp-less":           "^2.0.1",
+    "gulp-prompt":         "^0.1.1",
     "gulp-uglify":         "^1.0.1",
     "gulp-util":           "^3.0.1",
     "gulp-watch":          "^3.0.0",
-    "less":                "^2.1.1",
-    "path":                "^0.4.9"
+    "less":                "^2.1.1"
   },
  
    "scripts": {
