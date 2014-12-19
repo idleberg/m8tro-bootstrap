@@ -1,6 +1,6 @@
 # M8tro Bootstrap Theme
 
-[![GitHub version](https://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap.svg)](http://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap) [![Build Status](https://secure.travis-ci.org/idleberg/m8tro-bootstrap.svg)](http://travis-ci.org/idleberg/m8tro-bootstrap) [![devDependencies](https://david-dm.org/idleberg/m8tro-bootstrap/dev-status.svg)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
+[![GitHub version](https://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap.svg)](http://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap) [![Bower version](https://badge.fury.io/bo/m8tro-bootstrap.svg)](http://badge.fury.io/bo/m8tro-bootstrap) [![Build Status](https://secure.travis-ci.org/idleberg/m8tro-bootstrap.svg)](http://travis-ci.org/idleberg/m8tro-bootstrap) [![devDependencies](https://david-dm.org/idleberg/m8tro-bootstrap/dev-status.svg)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
 
 *This is work in progress*
 
