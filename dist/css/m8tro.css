@@ -6619,10 +6619,10 @@ a.list-group-item.active > .badge,
   border: 1px #ed1c24 solid;
 }
 .btn-primary + .dropdown-menu {
-  border-color: #00b3b5;
+  border-color: #ffffff;
 }
 .btn-primary + .dropdown-menu > .divider {
-  background-color: #00b3b5;
+  background-color: #ffffff;
 }
 .btn-success + .dropdown-menu {
   border-color: #80c342;
