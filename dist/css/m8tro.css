@@ -6558,16 +6558,16 @@ a.list-group-item.active > .badge,
   border: 1px #ffffff solid;
 }
 .btn-primary {
-  color: #00b3b5;
-  border: 1px #006769 solid;
+  color: #ffffff;
+  border: 1px #00b3b5 solid;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #00b3b5;
-  border: 1px #00b3b5 solid;
+  color: #ffffff;
+  border: 1px #ffffff solid;
 }
 .btn-success {
   color: #80c342;
