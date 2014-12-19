@@ -6669,7 +6669,7 @@ a.list-group-item.active > .badge,
 .jumbotron .btn-default:hover {
   color: #ffffff;
   background-color: #000000;
-  border: 1px #eeeeee solid;
+  border: 1px #000000 solid;
 }
 .jumbotron .btn-primary {
   color: #00b3b5;
