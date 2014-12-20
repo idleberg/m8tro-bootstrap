@@ -588,9 +588,13 @@ input, {
     color: @brand-warning;
   }
 
-  .form-control,
+  .form-control {
+    border: 1px solid darken(@brand-warning, 15%);
+  }
+
   .form-control:focus {
     border: 1px solid @brand-warning;
+    .box-shadow(none);
   }
 
   .input-group-addon {
@@ -609,9 +613,12 @@ input, {
     color: @brand-danger;
   }
 
-  .form-control,
+  .form-control {
+    border: 1px solid darken(@brand-danger, 15%);
+  }
   .form-control:focus {
     border: 1px solid @brand-danger;
+    .box-shadow(none);
   }
 
   .input-group-addon {
@@ -630,9 +637,13 @@ input, {
     color: @brand-success;
   }
 
-  .form-control,
+  .form-control {
+    border: 1px solid darken(@brand-success, 15%);
+  }
+
   .form-control:focus {
     border: 1px solid @brand-success;
+    .box-shadow(none);
   }
 
   .input-group-addon {

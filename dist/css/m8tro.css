@@ -6878,9 +6878,13 @@ input:focus {
 .has-warning .form-control-feedback {
   color: #faa61a;
 }
-.has-warning .form-control,
+.has-warning .form-control {
+  border: 1px solid #c37c04;
+}
 .has-warning .form-control:focus {
   border: 1px solid #faa61a;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .has-warning .input-group-addon {
   border-color: #faa61a;
@@ -6894,9 +6898,13 @@ input:focus {
 .has-error .form-control-feedback {
   color: #ed1c24;
 }
-.has-error .form-control,
+.has-error .form-control {
+  border: 1px solid #af0e14;
+}
 .has-error .form-control:focus {
   border: 1px solid #ed1c24;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .has-error .input-group-addon {
   border-color: #ed1c24;
@@ -6910,9 +6918,13 @@ input:focus {
 .has-success .form-control-feedback {
   color: #80c342;
 }
-.has-success .form-control,
+.has-success .form-control {
+  border: 1px solid #5a8c2c;
+}
 .has-success .form-control:focus {
   border: 1px solid #80c342;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .has-success .input-group-addon {
   border-color: #80c342;
