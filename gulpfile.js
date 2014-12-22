@@ -159,7 +159,7 @@ gulp.task('custom', ['clean'], function(){
    // 'Carousel\n',
   ],
   _dir   = 'bower_components/bootstrap/',
-  // _fonts = [],
+  _fonts = [],
   _less  = [
     'src/themes/m8tro-variables.less',
     _dir+'less/mixins.less',
