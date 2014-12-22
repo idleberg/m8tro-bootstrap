@@ -30,11 +30,11 @@ var concat   = require('gulp-concat'),
 gulp.task('css',     ['csslint']);
 gulp.task('html',    ['htmlval']);
 gulp.task('js',      ['jshint']);
+gulp.task('build',   ['make']);
 
 gulp.task('default', ['make']);
 
 gulp.task('lint',    ['css', 'html', 'js']);
-// gulp.task('make',    ['less', 'fontawesome', 'bootstrapjs']);
 gulp.task('travis',  ['css', 'html']);
 
 /*
@@ -91,19 +91,19 @@ gulp.task('less', function () {
 
 // Copy tasks
 gulp.task('fa_css', function() {
-  return gulp.src('bower_components/fontawesome/css/font-awesome.min.css')
-  .pipe(gulp.dest('dist/css/'));
+  gulp.src('bower_components/fontawesome/css/font-awesome.min.css')
+  .pipe(gulp.dest(__dirname+'/dist/css/'));
 });
 
 // Copy tasks
 gulp.task('fa_fonts', function() {
-  return  gulp.src([
+  gulp.src([
     'bower_components/fontawesome/fonts/fontawesome-webfont.eot',
     'bower_components/fontawesome/fonts/fontawesome-webfont.svg',
     'bower_components/fontawesome/fonts/fontawesome-webfont.ttf',
     'bower_components/fontawesome/fonts/fontawesome-webfont.woff'
   ])
-  .pipe(gulp.dest('dist/fonts/'));
+  .pipe(gulp.dest(__dirname+'/dist/fonts/'));
 });
 
 gulp.task('bootstrapjs', function() {
@@ -364,7 +364,7 @@ gulp.task('custom', ['clean'], function(){
 
 // Cleaning task
 gulp.task('clean', function () {
-    return del(['dist/']);
+    return del([__dirname+'/dist/']);
 });
 
 // Injection task
