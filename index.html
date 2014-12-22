@@ -1249,7 +1249,7 @@ while (x < 10) { // "x < 10" is the loop condition
     <!-- inject:js -->
       <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-      <script type="text/javascript">!function(){$('.bs-component [data-toggle="popover"]').popover(),$('.bs-component [data-toggle="tooltip"]').tooltip(),$(".bs-component").hover(function(){$(this).append($button),$button.show()},function(){$button.hide()})}();</script>
+      <script type="text/javascript">!function(){function b(a){var b=a.split(/\n/);b.shift(),b.splice(-1,1);var c=b[0].length-b[0].trim().length,d=new RegExp(" {"+c+"}");return b=b.map(function(a){return a.match(d)&&(a=a.substring(c)),a}),b=b.join("\n")}$(window).scroll(function(){var a=$(document).scrollTop();$(".splash").css({"background-position":"0px -"+(a/3).toFixed(2)+"px"}),a>50?$("#home > .navbar").removeClass("navbar-transparent"):$("#home > .navbar").addClass("navbar-transparent")});var a=$("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){var a=$(this).parent().html();a=b(a),$("#source-modal pre").text(a),$("#source-modal").modal()});$('.bs-component [data-toggle="popover"]').popover(),$('.bs-component [data-toggle="tooltip"]').tooltip(),$(".bs-component").hover(function(){$(this).append(a),a.show()},function(){a.hide()})}();</script>
     <!-- endinject -->
   </body>
 </html>
