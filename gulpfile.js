@@ -6,6 +6,8 @@
   * Licensed under the MIT license.
   */
 
+var debug    = true;
+
 var concat   = require('gulp-concat'),
     csslint  = require('gulp-csslint'),
     cssmin   = require('gulp-cssmin'),
@@ -17,6 +19,7 @@ var concat   = require('gulp-concat'),
     less     = require('gulp-less'),
     path     = require('path'),
     prompt   = require('gulp-prompt'),
+    sequence = require('run-sequence'),
     util     = require('gulp-util'),
     watch    = require('gulp-watch');
 
@@ -31,12 +34,21 @@ gulp.task('js',      ['jshint']);
 gulp.task('default', ['make']);
 
 gulp.task('lint',    ['css', 'html', 'js']);
-gulp.task('make',    ['less', 'fontawesome', 'bootstrapjs']);
+// gulp.task('make',    ['less', 'fontawesome', 'bootstrapjs']);
 gulp.task('travis',  ['css', 'html']);
 
 /*
  * Sub-tasks
  */
+ gulp.task('make', ['clean'], function(callback) {
+
+   sequence(
+       'less',
+       ['fa_css', 'fa_fonts'],
+       'bootstrapjs',
+       callback
+     );
+ });
 
 // HTML Page
 gulp.task('htmlval', function () {
@@ -65,7 +77,7 @@ gulp.task('jshint', function() {
 });
 
 // LESS
-gulp.task('less', ['clean'], function () {
+gulp.task('less', function () {
   gulp.src('src/themes/m8tro/build.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -78,19 +90,23 @@ gulp.task('less', ['clean'], function () {
 });
 
 // Copy tasks
-gulp.task('fontawesome', ['clean'], function() {
-  gulp.src([
-      'bower_components/fontawesome/css/font-awesome.min.css'
-    ])
-    .pipe(gulp.dest('dist/css/'));
-    
-  gulp.src([
-      'bower_components/fontawesome/fonts/*'
-    ])
-    .pipe(gulp.dest('dist/fonts/'));
+gulp.task('fa_css', function() {
+  return gulp.src('bower_components/fontawesome/css/font-awesome.min.css')
+  .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('bootstrapjs', ['clean'], function() {
+// Copy tasks
+gulp.task('fa_fonts', function() {
+  return  gulp.src([
+    'bower_components/fontawesome/fonts/fontawesome-webfont.eot',
+    'bower_components/fontawesome/fonts/fontawesome-webfont.svg',
+    'bower_components/fontawesome/fonts/fontawesome-webfont.ttf',
+    'bower_components/fontawesome/fonts/fontawesome-webfont.woff'
+  ])
+  .pipe(gulp.dest('dist/fonts/'));
+});
+
+gulp.task('bootstrapjs', function() {
   gulp.src([
       'bower_components/bootstrap/dist/js/bootstrap.min.js'
     ])
@@ -143,14 +159,15 @@ gulp.task('custom', ['clean'], function(){
    // 'Carousel\n',
   ],
   _dir   = 'bower_components/bootstrap/',
+  // _fonts = [],
   _less  = [
     'src/themes/m8tro-variables.less',
-    'bower_components/bootstrap/less/mixins.less',
-    'bower_components/bootstrap/less/normalize.less'
+    _dir+'less/mixins.less',
+    _dir+'less/normalize.less'
   ];
 
    // Dialog
-   gulp.src('./')
+   return gulp.src('.')
    .pipe(prompt.prompt({
      type: 'checkbox',
      name: 'components',
@@ -169,14 +186,14 @@ gulp.task('custom', ['clean'], function(){
           if (res.components.indexOf('Glyphicons')  > -1 ) {
             console.log('+Including glyphicons.less');
             _less.push(_dir+'less/glyphicons.less');
-            // console.log(' Including glyphicons-halflings-regular.eot');
-            // _fonts.push(_dir+'fonts/glyphicons-halflings-regular.eot');
-            // console.log(' Including glyphicons-halflings-regular.svg');
-            // _fonts.push(_dir+'fonts/glyphicons-halflings-regular.svg');
-            // console.log(' Including glyphicons-halflings-regular.ttf');
-            // _fonts.push(_dir+'fonts/glyphicons-halflings-regular.ttf');
-            // console.log(' Including glyphicons-halflings-regular.woff');
-            // _fonts.push(_dir+'fonts/glyphicons-halflings-regular.woff');
+            console.log(' Including glyphicons-halflings-regular.eot');
+            _fonts.push(_dir+'fonts/glyphicons-halflings-regular.eot');
+            console.log(' Including glyphicons-halflings-regular.svg');
+            _fonts.push(_dir+'fonts/glyphicons-halflings-regular.svg');
+            console.log(' Including glyphicons-halflings-regular.ttf');
+            _fonts.push(_dir+'fonts/glyphicons-halflings-regular.ttf');
+            console.log(' Including glyphicons-halflings-regular.woff');
+            _fonts.push(_dir+'fonts/glyphicons-halflings-regular.woff');
           }
           if (res.components.indexOf('Typography')  > -1 ) {
             console.log('+Including type.less');
@@ -323,25 +340,31 @@ gulp.task('custom', ['clean'], function(){
           console.log('+Including m8tro-theme.less');
           _less.push('src/themes/m8tro-theme.less');
 
-          console.log('\nA total of '+_less.length+' LESS files included. However, no files were created! ^__^')
-        }));
+          console.log('\nA total of '+_less.length+' LESS files included. However, no files were created! ^__^\n');
+          
+          if (debug == true) {
+            console.log(_less);
+          }
 
-      // Compile LESS - doesn't run, why?
-      gulp.src(_less)
-        .pipe(less({
-          paths: [ path.join(__dirname, 'less', 'includes') ]
-        }))
-        .pipe(concat('m8tro-custom.css'))
-        .pipe(gulp.dest('dist/css/'))
-        .pipe(concat('m8tro-custom.min.css'))
-        .pipe(cssmin())
-        .pipe(gulp.dest('dist/css/'));
+          // Compile LESS - doesn't run, why?
+          gulp.src(_less)
+            .pipe(concat('m8tro-custom.less'))
+            .pipe(less({
+              paths: [ path.join(__dirname, 'less', '+includes') ]
+            }))
+            .pipe(concat('m8tro-custom.css'))
+            .pipe(gulp.dest('dist/css/'))
+            .pipe(concat('m8tro-custom.min.css'))
+            .pipe(cssmin())
+            .pipe(gulp.dest('dist/css/'));
+
+        }));
 });
 
 
 // Cleaning task
 gulp.task('clean', function () {
-    return del(['dist/*/**']);
+    return del(['dist/']);
 });
 
 // Injection task
