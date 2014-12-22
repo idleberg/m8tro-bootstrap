@@ -25,15 +25,14 @@
     "index.html",
     "m8ke",
     "node_modules",
-    "package.json",
-    "src"
+    "package.json"
   ],
 
   "dependencies": {
+    "bootstrap":   "^3.3.1"
   },
 
   "devDependencies": {
-    "bootstrap":   "^3.3.1",
     "fontawesome": "^4.2.0",
     "html5shiv":   "^3.7.2",
     "respond":     "^1.4.2"
