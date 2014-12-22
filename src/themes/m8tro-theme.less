@@ -213,9 +213,9 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .btn, .btn:hover, .btn:focus, .btn:active{
   background-color: @body-bg;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: all ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: all ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: all ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .btn.disabled{
@@ -235,11 +235,12 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .btn-primary {
   color: @link-color;
-  border: 1px @brand-primary solid;
+  border: 1px @link-color solid;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  color: @link-color;
+  color: @body-bg;
+  background-color: @link-color;
   border: 1px @link-color solid;
 }
 
