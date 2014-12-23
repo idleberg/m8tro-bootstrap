@@ -2071,11 +2071,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #212121;
+  border-top: 1px solid #cccccc;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #212121;
+  border-bottom: 2px solid #cccccc;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2086,7 +2086,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #212121;
+  border-top: 2px solid #cccccc;
 }
 .table .table {
   background-color: #000000;
@@ -2100,7 +2100,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #212121;
+  border: 1px solid #cccccc;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2108,7 +2108,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #212121;
+  border: 1px solid #cccccc;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2246,7 +2246,7 @@ table th[class*="col-"] {
     margin-bottom: 21px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #212121;
+    border: 1px solid #cccccc;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -5173,7 +5173,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #212121;
+  border-top: 1px solid #cccccc;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -6857,7 +6857,7 @@ table-bordered > tbody > tr > td,
 .table-bordered > tbody > tr > td,
 table-bordered > tfoot > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #212121;
+  border: 1px solid #cccccc;
 }
 .form-control,
 input {
