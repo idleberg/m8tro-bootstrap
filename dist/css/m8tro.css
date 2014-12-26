@@ -6542,6 +6542,14 @@ a.list-group-item.active > .badge,
   -o-transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: all ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+}
 .btn.disabled {
   background-color: inherit;
   border: transparent;
@@ -6721,6 +6729,7 @@ a.list-group-item.active > .badge,
 .modal .close:focus {
   color: #ffffff;
   opacity: 1;
+  outline: none;
 }
 .progress-striped .progress-bar {
   background: -webkit-linear-gradient(0deg, #ffffff 50%, #000000 50%);
