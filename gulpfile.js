@@ -60,8 +60,7 @@ gulp.task('htmlval', function () {
 // Custom CSS
 gulp.task('csslint', function() {
   gulp.src([
-      'dist/css/*',
-      '!dist/css/font-awesome.min.css'
+      'dist/css/m8tro.css'
     ])
     .pipe(csslint())
     .pipe(csslint.reporter())
