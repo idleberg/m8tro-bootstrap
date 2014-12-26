@@ -6978,6 +6978,7 @@ input:focus {
 .alert .close:focus {
   color: #ffffff;
   opacity: 1;
+  outline: none;
 }
 .progress {
   height: 10px;
