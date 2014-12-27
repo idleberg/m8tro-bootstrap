@@ -1,6 +1,8 @@
 # M8tro Bootstrap Theme
 
-[![GitHub version](https://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap.svg)](http://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap) [![Bower version](https://badge.fury.io/bo/m8tro-bootstrap.svg)](http://badge.fury.io/bo/m8tro-bootstrap) [![Build Status](https://secure.travis-ci.org/idleberg/m8tro-bootstrap.svg)](http://travis-ci.org/idleberg/m8tro-bootstrap) [![devDependencies](https://david-dm.org/idleberg/m8tro-bootstrap/dev-status.svg)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
+[![Bower](https://img.shields.io/bower/v/m8tro-bootstrap.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/travis/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://travis-ci.org/idleberg/m8tro-bootstrap)
+[![David](https://img.shields.io/david/dev/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
 
 Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”).
 
@@ -41,11 +43,13 @@ There is currently no officially supported CDN. Also, it is [not advised](http:/
 
 The provided `gulpfile.js` will serve as our primary build tool. In order to use it, you need to have [Node.js](http://nodejs.org/download/) and [Gulp](http://gulpjs.com/) installed.
 
+Once set up, install all required Node packages:
+
 ```bash
 npm install
 ```
 
-Several gulp tasks are now available. Use `gulp make` to build the style sheets or lint them using `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
+Several gulp tasks are now available, primarily you will want to use `gulp make` to build the style sheets. Other tasks include a linter `gulp lint`, which can also be called to lint individual file types (`gulp css`, `gulp js` & `gulp html`.)
 
 ### Bash script
 
