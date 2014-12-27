@@ -1,6 +1,6 @@
 # M8tro Bootstrap Theme
 
-[![Bower](https://img.shields.io/bower/v/m8tro-bootstrap.svg?style=flat-square)]()
+[![Bower](https://img.shields.io/bower/v/m8tro-bootstrap.svg?style=flat-square)](https://github.com/idleberg/m8tro-bootstrap/releases)
 [![Travis](https://img.shields.io/travis/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://travis-ci.org/idleberg/m8tro-bootstrap)
 [![David](https://img.shields.io/david/dev/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
 
@@ -15,7 +15,7 @@ This theme was created with Modern UI's [Segoe](http://www.microsoft.com/typogra
 Font | Platform
 -----|---------
 [Segoe UI](http://www.microsoft.com/typography/fonts/family.aspx?FID=331)         | Windows Vista (or later), Windows Phone 7 (or later)
-[Roboto Condensed](http://www.google.com/fonts/specimen/Roboto+Condensed) | Android, Web font (optional)
+[Roboto Condensed](http://developer.android.com/design/style/typography.html) | Android, Web font ([optional](http://www.google.com/fonts/specimen/Roboto+Condensed))
 [Fira Sans](http://mozilla.github.io/Fira/)        | Firefox OS, Web font ([optional](http://www.google.com/fonts/specimen/Fira+Sans))
 [Neue Helvetica](http://www.linotype.com/1266/neuehelvetica-family.html)   | iOS, Mac OS X
 
