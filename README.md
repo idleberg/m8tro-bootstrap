@@ -2,8 +2,6 @@
 
 [![GitHub version](https://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap.svg)](http://badge.fury.io/gh/idleberg%2Fm8tro-bootstrap) [![Bower version](https://badge.fury.io/bo/m8tro-bootstrap.svg)](http://badge.fury.io/bo/m8tro-bootstrap) [![Build Status](https://secure.travis-ci.org/idleberg/m8tro-bootstrap.svg)](http://travis-ci.org/idleberg/m8tro-bootstrap) [![devDependencies](https://david-dm.org/idleberg/m8tro-bootstrap/dev-status.svg)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
 
-*This is work in progress*
-
 Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”).
 
 *Watch a [live demo](http://idleberg.github.io/m8tro-bootstrap/)!*
@@ -41,24 +39,20 @@ There is currently no officially supported CDN. Also, it is [not advised](http:/
 
 ### Gulp task
 
-The provided `gulpfile.js` will serve as our primary build tool. In order to use it, we need to have [Node.js](http://nodejs.org/download/) and [Bower](http://bower.io/) installed.
+The provided `gulpfile.js` will serve as our primary build tool. In order to use it, you need to have [Node.js](http://nodejs.org/download/) and [Gulp](http://gulpjs.com/) installed.
 
 ```bash
-# install Bower and Gulp globally
-npm install bower gulp -g
-
-# install Node dependencies
 npm install
 ```
 
-Several gulp tasks are now available. Use `gulp make` to build the style sheet or make use of the `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
+Several gulp tasks are now available. Use `gulp make` to build the style sheets or lint them using `gulp lint` feature. You can also lint files by extensions (`gulp css`, `gulp js` & `gulp html`.)
 
 ### Bash script
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
 2. Install [Less](http://lesscss.org/) compiler `npm install less -g`
 3. Edit any of the files in the *src*-folder
-4. Run `./m8ke` (or `./m8ke theme`) to run the [LESS](http://lesscss.org/) compiler
+4. Run `./m8ke` (or `./m8ke <theme>`) to run the [LESS](http://lesscss.org/) compiler
 
 That last step will also install all required [Bower](http://bower.io/) components, the equivalent of a manually typed `bower install`.
 
