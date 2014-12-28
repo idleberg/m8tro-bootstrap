@@ -34,7 +34,14 @@ var concat   = require('gulp-concat'),
 gulp.task('css',     ['csslint']);
 gulp.task('html',    ['htmlval']);
 gulp.task('js',      ['jshint']);
-gulp.task('build',   ['make']);
+gulp.task('build',   ['setup']);
+gulp.task('custom',  ['setup']);
+gulp.task('make',    ['setup']);
+gulp.task('prefs',   ['setup']);
+gulp.task('clear',   ['clean']);
+gulp.task('empty',   ['clean']);
+gulp.task('flush',   ['clean']);
+gulp.task('trash',   ['clean']);
 
 gulp.task('default', ['help']);
 
@@ -45,7 +52,7 @@ gulp.task('travis',  ['css', 'html']);
 /*
  * Sub-tasks
  */
- gulp.task('make', ['clean'], function(callback) {
+ gulp.task('setup', ['clean'], function(callback) {
 
    console.log('\nBuilding M8tro theme:')
    sequence(
@@ -436,7 +443,8 @@ gulp.task('help', function() {
   console.log('\nAvailable tasks:')
   console.log('         help - this dialog')
   console.log('        clean - delete dist-folder')
+  console.log('         lint - lint included CSS and JavaScript files')
   console.log('         make - build M8tro Bootstrap theme')
-  console.log('       custom - customize & build M8tro Bootstrap theme')
+  console.log('        setup - customize & build M8tro Bootstrap theme')
 
 } )
