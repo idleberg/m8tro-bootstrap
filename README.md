@@ -49,7 +49,7 @@ Once set up, install all required Node packages:
 npm install
 ```
 
-Several gulp tasks are now available, primarily you will want to use `gulp make` to build the style sheets. Other tasks include a linter `gulp lint`, which can also be called to lint individual file types (`gulp css`, `gulp js` & `gulp html`.)
+Several gulp tasks are now available, primarily you will want to use `gulp make` to build the style sheets. Alternatively, you can build a custom Bootstrap package using `gulp custom`. Lastly, there's a handful of linting tasks available. Most commonly you would use `gulp lint`, but it's also possible to lint file by type (`gulp css`, `gulp js` & `gulp html`.)
 
 ### Bash script
 
