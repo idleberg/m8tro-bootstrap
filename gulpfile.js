@@ -11,17 +11,17 @@
 var meta     = require('./package.json');
 
 // Gulp plugins
-var concat   = require('gulp-concat'),
-    csslint  = require('gulp-csslint'),
+var cache    = require('gulp-cached'),
+    concat   = require('gulp-concat'),
     cssmin   = require('gulp-cssmin'),
     del      = require('del'),
     gulp     = require('gulp'),
     htmlval  = require('gulp-html-validator'),
     inject   = require('gulp-inject'),
-    jshint   = require('gulp-jshint'),
     less     = require('gulp-less'),
     path     = require('path'),
     prompt   = require('gulp-prompt'),
+    recess   = require('gulp-recess'),
     sequence = require('run-sequence'),
     util     = require('gulp-util'),
     uglify   = require('gulp-uglify'),
@@ -31,9 +31,7 @@ var concat   = require('gulp-concat'),
 /*
  * Task combos
  */
-gulp.task('css',     ['csslint']);
 gulp.task('html',    ['htmlval']);
-gulp.task('js',      ['jshint']);
 gulp.task('build',   ['setup']);
 gulp.task('custom',  ['setup']);
 gulp.task('prefs',   ['setup']);
@@ -44,8 +42,7 @@ gulp.task('trash',   ['clean']);
 
 gulp.task('default', ['help']);
 
-gulp.task('lint',    ['css', 'html', 'js']);
-gulp.task('travis',  ['css', 'html']);
+gulp.task('lint',    ['lesslint', 'html']);
 
 
 /*
@@ -72,22 +69,13 @@ gulp.task('htmlval', function () {
 
 
 // Custom CSS
-gulp.task('csslint', function() {
+gulp.task('lesslint', function() {
   gulp.src([
-      'dist/css/m8tro.css'
+      'src/theme/**/*.less'
     ])
-    .pipe(csslint())
-    .pipe(csslint.reporter())
-});
-
-
-// Custom Javascript
-gulp.task('jshint', function() {
-  gulp.src([
-      'dist/js/*'
-    ])
-    .pipe(jshint())
-    .pipe(jshint.reporter())
+    .pipe(cache('linting_less'))
+    .pipe(recess())
+    .pipe(recess.reporter());
 });
 
 
@@ -395,7 +383,6 @@ gulp.task('setup', ['clean'], function(){
 
             // Compile JavaScript
             gulp.src(_js)
-                .pipe(jshint())
                 .pipe(concat('bootstrap.js'))
                 .pipe(gulp.dest('dist/js/'))
                 .pipe(concat('bootstrap.min.js'))
@@ -425,7 +412,7 @@ gulp.task('local', function () {
 // Watch task
 gulp.task('watch', function () {
    gulp.watch([
-            'dist/**/*',
+            'src/**/*',
             'index.html'
          ],
          ['lint'])
