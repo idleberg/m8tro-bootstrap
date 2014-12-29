@@ -56,7 +56,7 @@ Task    | Description
 `make`  | build M8tro theme
 `setup` | choose Bootstrap [components](http://getbootstrap.com/customize/) & build M8tro theme
 `clean` | delete contents of distribution folder
-`lint`  | lint included CSS and JavaScript files
+`lint`  | lint included LESS and JavaScript files
 
 ### Bash script
 
