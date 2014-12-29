@@ -36,7 +36,6 @@ gulp.task('html',    ['htmlval']);
 gulp.task('js',      ['jshint']);
 gulp.task('build',   ['setup']);
 gulp.task('custom',  ['setup']);
-gulp.task('make',    ['setup']);
 gulp.task('prefs',   ['setup']);
 gulp.task('clear',   ['clean']);
 gulp.task('empty',   ['clean']);
@@ -52,7 +51,7 @@ gulp.task('travis',  ['css', 'html']);
 /*
  * Sub-tasks
  */
- gulp.task('setup', ['clean'], function(callback) {
+ gulp.task('make', ['clean'], function(callback) {
 
    console.log('\nBuilding M8tro theme:')
    sequence(
@@ -147,7 +146,7 @@ gulp.task('bootstrapjs', function() {
 
 
 // Customize Bootstrap assets
-gulp.task('custom', ['clean'], function(){
+gulp.task('setup', ['clean'], function(){
   var _components = [
    'Print media styles',
    'Typography',
