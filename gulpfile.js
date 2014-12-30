@@ -442,7 +442,7 @@ gulp.task('watch', function () {
             'bower.json',
             'gulpfile.js',
             'package.json',
-            'src/**/*',
+            'src/**/*.less',
             'index.html'
          ],
          ['lint']);
