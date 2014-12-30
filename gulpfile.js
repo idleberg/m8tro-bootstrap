@@ -18,6 +18,8 @@ var cache    = require('gulp-cached'),
     gulp     = require('gulp'),
     htmlval  = require('gulp-html-validator'),
     inject   = require('gulp-inject'),
+    jshint   = require('gulp-jshint'),
+    jsonlint = require('gulp-json-lint'),
     less     = require('gulp-less'),
     path     = require('path'),
     prompt   = require('gulp-prompt'),
@@ -40,27 +42,52 @@ gulp.task('empty',   ['clean']);
 gulp.task('flush',   ['clean']);
 gulp.task('trash',   ['clean']);
 
-gulp.task('default', ['help']);
+gulp.task('default',  ['help']);
+gulp.task('selftest', ['jshint', 'jsonlint']);
 
-gulp.task('lint',    ['lesslint', 'html']);
+gulp.task('lint',    ['lesslint', 'html', 'selftest']);
 
 
 /*
  * Sub-tasks
  */
- gulp.task('make', ['clean'], function(callback) {
+gulp.task('make', ['clean'], function(callback) {
 
-   console.log('\nBuilding M8tro theme:')
-   sequence(
-       ['fa_css', 'fa_fonts'],
-       'bootstrapjs',
-       'less',
-       callback
-     );
- });
+ console.log('\nBuilding M8tro theme:');
+ sequence(
+     ['fa_css', 'fa_fonts'],
+     'bootstrapjs',
+     'less',
+     callback
+   );
+});
 
 
-// HTML Page
+ // Lint JS files
+gulp.task('jshint', function() {
+
+  gulp.src([
+    'gulpfile.js'
+  ])
+  .pipe(cache('linting_js'))
+  .pipe(jshint())
+  .pipe(jshint.reporter());
+});
+
+
+// Lint JSON
+gulp.task('jsonlint', function () {
+ return gulp.src([
+     'bower.json',
+     'package.json'
+   ])
+   .pipe(cache('linting_json'))
+   .pipe(jsonlint())
+   .pipe(jsonlint.report('verbose'));
+});
+
+
+// Validate HTML
 gulp.task('htmlval', function () {
   return htmlval([
         'index.html'
@@ -68,7 +95,7 @@ gulp.task('htmlval', function () {
 });
 
 
-// Custom CSS
+// Lint LESS
 gulp.task('lesslint', function() {
   gulp.src([
       'src/theme/**/*.less'
@@ -79,10 +106,10 @@ gulp.task('lesslint', function() {
 });
 
 
-// LESS
+// Build LESS
 gulp.task('less', function () {
   
-  console.log('\nCrunching…')
+  console.log('\nCrunching…');
   gulp.src('src/themes/m8tro/build.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -238,13 +265,13 @@ gulp.task('setup', ['clean'], function(){
             if (res.components.indexOf('Dropdowns')  > -1 ) {
               console.log('+dropdowns.less');
               _less.push(_dir+'less/dropdowns.less');
-              console.log('+dropdown.js')
+              console.log('+dropdown.js');
               _js.push(_dir+'js/dropdown.js');
             }
             if (res.components.indexOf('Button groups')  > -1 ) {
               console.log('+button-groups.less');
               _less.push(_dir+'less/button-groups.less');
-              console.log('+button.js')
+              console.log('+button.js');
               _js.push(_dir+'js/button.js');
             }
             if (res.components.indexOf('Input groups')  > -1 ) {
@@ -254,7 +281,7 @@ gulp.task('setup', ['clean'], function(){
             if (res.components.indexOf('Navs')  > -1 ) {
               console.log('+navs.less');
               _less.push(_dir+'less/navs.less');
-              console.log('+tab.js')
+              console.log('+tab.js');
               _js.push(_dir+'js/tab.js');
             }
             if (res.components.indexOf('Navbar')  > -1 ) {
@@ -292,7 +319,7 @@ gulp.task('setup', ['clean'], function(){
             if (res.components.indexOf('Alerts')  > -1 ) {
               console.log('+alerts.less');
               _less.push(_dir+'less/alerts.less');
-              console.log('+alert.js')
+              console.log('+alert.js');
               _js.push(_dir+'js/alert.js');
             }
             if (res.components.indexOf('Progress bars')  > -1 ) {
@@ -326,25 +353,25 @@ gulp.task('setup', ['clean'], function(){
             if (res.components.indexOf('Modals')  > -1 ) {
               console.log('+modals.less');
               _less.push(_dir+'less/modals.less');
-              console.log('+modal.js')
+              console.log('+modal.js');
               _js.push(_dir+'js/modal.js');
             }
             if (res.components.indexOf('Tooltips')  > -1 ) {
               console.log('+tooltips.less');
               _less.push(_dir+'less/tooltips.less');
-              console.log('+tooltip.js')
+              console.log('+tooltip.js');
               _js.push(_dir+'js/tooltip.js');
             }
             if (res.components.indexOf('Popovers')  > -1 ) {
               console.log('+popovers.less');
               _less.push(_dir+'less/popovers.less');
-              console.log('+popover.js')
+              console.log('+popover.js');
               _js.push(_dir+'js/popover.js');
             }
             if (res.components.indexOf('Carousel\n')  > -1 ) {
               console.log('+carousel.less');
               _less.push(_dir+'less/carousel.less');
-              console.log('+carousel.js')
+              console.log('+carousel.js');
               _js.push(_dir+'js/carousel.js');
             }
             console.log('+utilities.less');
@@ -358,7 +385,7 @@ gulp.task('setup', ['clean'], function(){
             _less.push('src/themes/m8tro-variables.less');
             _less.push('src/themes/m8tro-theme.less');
 
-            console.log('\n'+_less.length+' styles, '+_js.length+' scripts and '+_fonts.length+' fonts in total')
+            console.log('\n'+_less.length+' styles, '+_js.length+' scripts and '+_fonts.length+' fonts in total');
             console.log('Crunching…');
 
 
@@ -412,10 +439,13 @@ gulp.task('local', function () {
 // Watch task
 gulp.task('watch', function () {
    gulp.watch([
+            'bower.json',
+            'gulpfile.js',
+            'package.json',
             'src/**/*',
             'index.html'
          ],
-         ['lint'])
+         ['lint']);
 });
 
 
@@ -426,11 +456,11 @@ gulp.task('help', function() {
 
   console.log('\n' + meta.name + ' v' + meta.version);
   console.log('The MIT License (MIT)');
-  console.log('\nAvailable tasks:')
-  console.log('         help - this dialog')
-  console.log('        clean - delete dist-folder')
-  console.log('         lint - lint included CSS and JavaScript files')
-  console.log('         make - build M8tro Bootstrap theme')
-  console.log('        setup - customize & build M8tro Bootstrap theme')
+  console.log('\nAvailable tasks:');
+  console.log('         help - this dialog');
+  console.log('        clean - delete dist-folder');
+  console.log('         lint - lint included CSS and JavaScript files');
+  console.log('         make - build M8tro Bootstrap theme');
+  console.log('        setup - customize & build M8tro Bootstrap theme');
 
-} )
+} );
