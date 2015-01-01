@@ -12,6 +12,15 @@
  
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "css",
+    "less",
+    "bootstrap",
+    "modern-ui",
+    "metro",
+    "windows 8",
+    "windows phone"
+  ],
  
   "devDependencies": {
     "bower":               "^1.3.12",
@@ -43,7 +52,7 @@
    "npmFileMap": [{
      "basePath": "/dist/css/",
      "files": [
-       "*.css"
+       "*.min.css"
      ]
    }]
 }
