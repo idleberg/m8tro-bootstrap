@@ -11,7 +11,7 @@
   },
  
   "license": "MIT",
-  "private": true,
+  "private": false,
  
   "devDependencies": {
     "bower":               "^1.3.12",
