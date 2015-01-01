@@ -12,6 +12,19 @@
  
   "license": "MIT",
   "private": false,
+  
+  "files": [
+    "dist/css/m8tro.css",
+    "dist/css/m8tro.min.css",
+    "src/themes/**/*.less",
+    "bower.json",
+    "gulpfile.js",
+    "index.html",
+    "m8ke",
+    "package.json",
+    "README.md"
+  ],
+
   "keywords": [
     "css",
     "less",
