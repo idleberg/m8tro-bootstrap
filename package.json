@@ -37,5 +37,13 @@
  
    "scripts": {
     "postinstall": "bower install"
-  }
+  },
+
+  "npmName": "m8tro-bootstrap",
+   "npmFileMap": [{
+     "basePath": "/dist/css/",
+     "files": [
+       "*.css"
+     ]
+   }]
 }
