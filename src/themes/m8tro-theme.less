@@ -24,6 +24,14 @@ a.btn, .pager a, a.navbar-brand, .breadcrumb a, a.list-group-item{
   border: 1px @text-color solid;
 }
 
+.pager li>a, .pager li>span,
+.close:focus, .close:hover,
+.pagination>li>a, .pagination>li>span {
+  -webkit-transition: all ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: all ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: all ease-in-out .15s, box-shadow ease-in-out .15s; 
+}
+
 .table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
   background-color: @m8tro-theme;
   color: @body-bg;
