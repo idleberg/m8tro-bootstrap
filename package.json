@@ -37,6 +37,7 @@
  
   "devDependencies": {
     "bower":               "^1.3.12",
+    "better-console":      "^0.2.3",
     "del":                 "^1.1.1",
     "gulp":                "^3.8.10",
     "gulp-cached":         "^1.0.1",
