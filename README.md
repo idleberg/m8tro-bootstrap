@@ -25,7 +25,7 @@ Font | Platform
 
 Style-sheets are meant to be used instead of `bootstrap.min.css`, there's no need to include both files.
 
-### Bower
+### Package Managers
 
 Pre-compiled CSS files can be installed using [Bower](http://bower.io/) or [npm](https://www.npmjs.com):
 
