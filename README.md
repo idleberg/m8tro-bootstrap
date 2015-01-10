@@ -43,7 +43,7 @@ Use the style-sheets from a [release](https://github.com/idleberg/m8tro-bootstra
 
 ### CDN
 
-There is currently no officially supported CDN. Also, it is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub, since it increases your page's load time.
+As of version 3.3.1, the style-sheet is hosted on [cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap). It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub.
 
 ## Developers
 
