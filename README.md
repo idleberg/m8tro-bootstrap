@@ -12,7 +12,7 @@ Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.co
 
 ## Fonts
 
-This theme was created with Modern UI's [Segoe](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) font-family in mind. While this commercial font is largely available on the Windows platform (Vista and later, Windows Phone), fallback fonts are required for other platforms. 
+This theme was created with Modern UI's [Segoe](http://www.microsoft.com/typography/fonts/family.aspx?FID=331) font-family in mind. While this commercial font is largely available on the Windows platform (Windows Phone, Windows Vista and later), system-default fonts will be used as fallback on other platforms. 
 
 Font | Platform
 -----|---------
@@ -39,7 +39,7 @@ Pre-compiled CSS files can be installed using [Bower](http://bower.io/) or [npm]
 
 ### Manual Installation
 
-Use the style-sheets from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or get the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
+Use the style-sheet from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or downlaod the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
 
 ### CDN
 
