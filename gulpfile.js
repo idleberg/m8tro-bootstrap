@@ -51,19 +51,6 @@ gulp.task('lint',    ['lesslint', 'html', 'selftest']);
 
 
 /*
- * Functions
- */
-Object.prototype.getKeyByValue = function( value ) {
-    for( var prop in this ) {
-        if( this.hasOwnProperty( prop ) ) {
-             if( this[ prop ] === value )
-                 return prop;
-        }
-    }
-}
-
-
-/*
  * Sub-tasks
  */
 gulp.task('make', ['clean'], function(callback) {
@@ -182,7 +169,7 @@ gulp.task('setup', ['clean'], function(){
   if (argv.listr) {
     listr_state = true;
   } else {
-    listr_state = false
+    listr_state = false;
   }
 
   var _components = [
