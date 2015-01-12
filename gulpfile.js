@@ -28,7 +28,8 @@ var cache    = require('gulp-cached'),
     sequence = require('run-sequence'),
     util     = require('gulp-util'),
     uglify   = require('gulp-uglify'),
-    watch    = require('gulp-watch');
+    watch    = require('gulp-watch'),
+    argv     = require('yargs').argv;
 
 
 /*
@@ -47,6 +48,19 @@ gulp.task('default',  ['help']);
 gulp.task('selftest', ['jshint', 'jsonlint']);
 
 gulp.task('lint',    ['lesslint', 'html', 'selftest']);
+
+
+/*
+ * Functions
+ */
+Object.prototype.getKeyByValue = function( value ) {
+    for( var prop in this ) {
+        if( this.hasOwnProperty( prop ) ) {
+             if( this[ prop ] === value )
+                 return prop;
+        }
+    }
+}
 
 
 /*
@@ -163,44 +177,53 @@ gulp.task('bootstrapjs', function() {
 
 // Customize Bootstrap assets
 gulp.task('setup', ['clean'], function(){
+
+  // Include Bootstrap Listr LESS dependencies
+  if (argv.listr) {
+    listr_state = true;
+  } else {
+    listr_state = false
+  }
+
   var _components = [
-   {name: 'Print media styles', checked: true },
-   {name: 'Typography', checked: true },
-   {name: 'Code', checked: true },
-   {name: 'Grid system', checked: true },
-   {name: 'Tables', checked: true },
-   {name: 'Forms', checked: true },
-   {name: 'Buttons', checked: true },
-   {name: 'Responsive utilities\n', checked: true },
-
-   {name: 'Glyphicons', checked: true },
-   {name: 'Button groups', checked: true },
-   {name: 'Input groups', checked: true },
-   {name: 'Navs', checked: true },
-   {name: 'Navbar', checked: true },
-   {name: 'Breadcrumbs', checked: true },
-   {name: 'Pagination', checked: true },
-   {name: 'Pager', checked: true },
-   {name: 'Labels', checked: true },
-   {name: 'Badges', checked: true },
-   {name: 'Jumbotron', checked: true },
-   {name: 'Thumbnails', checked: true },
-   {name: 'Alerts', checked: true },
-   {name: 'Progress bars', checked: true },
-   {name: 'Media items', checked: true },
-   {name: 'List groups', checked: true },
-   {name: 'Panels', checked: true },
-   {name: 'Responsive embed', checked: true },
-   {name: 'Wells', checked: true },
-   {name: 'Close icon\n', checked: true },
-
-   {name: 'Component animations (for JS)', checked: true },
-   {name: 'Dropdowns', checked: true },
-   {name: 'Tooltips', checked: true },
-   {name: 'Popovers', checked: true },
-   {name: 'Modals', checked: true },
-   {name: 'Carousel\n', checked: true },
+   { name: 'Print media styles', checked: false },
+   { name: 'Typography', checked: listr_state },
+   { name: 'Code', checked: listr_state },
+   { name: 'Grid system', checked: listr_state },
+   { name: 'Tables', checked: listr_state },
+   { name: 'Forms', checked: listr_state },
+   { name: 'Buttons', checked: listr_state },
+   { name: 'Responsive utilities\n', checked: listr_state },
+ 
+   { name: 'Glyphicons', checked: listr_state },
+   { name: 'Button groups', checked: listr_state },
+   { name: 'Input groups', checked: false },
+   { name: 'Navs', checked: false },
+   { name: 'Navbar', checked: false },
+   { name: 'Breadcrumbs', checked: listr_state },
+   { name: 'Pagination', checked: false },
+   { name: 'Pager', checked: false },
+   { name: 'Labels', checked: false },
+   { name: 'Badges', checked: false },
+   { name: 'Jumbotron', checked: false },
+   { name: 'Thumbnails', checked: false },
+   { name: 'Alerts', checked: false },
+   { name: 'Progress bars', checked: false },
+   { name: 'Media items', checked: false },
+   { name: 'List groups', checked: false },
+   { name: 'Panels', checked: false },
+   { name: 'Responsive embed', checked: listr_state },
+   { name: 'Wells', checked: false },
+   { name: 'Close icon\n', checked: listr_state },
+ 
+   { name: 'Component animations (for JS)', checked: listr_state },
+   { name: 'Dropdowns', checked: listr_state },
+   { name: 'Tooltips', checked: false },
+   { name: 'Popovers', checked: false },
+   { name: 'Modals', checked: listr_state },
+   { name: 'Carousel\n', checked: false },
   ],
+
   _dir   = 'bower_components/bootstrap/',
   _fonts = [],
   _js    = [], 
@@ -421,7 +444,6 @@ gulp.task('setup', ['clean'], function(){
 
           }));
 });
-
 
 // Cleaning task
 gulp.task('clean', function () {
