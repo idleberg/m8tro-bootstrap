@@ -233,6 +233,10 @@ gulp.task('setup', ['clean'], function(){
 
             console.log('\nBuilding custom M8tro theme:');
 
+            console.log('+variables.less');
+            console.log('+mixins.less');
+            console.log('+normalize.less');
+
             if (res.components.indexOf('Print media styles')  > -1 ) {
               console.log('+print.less');
               _less.push(_dir+'less/print.less');
