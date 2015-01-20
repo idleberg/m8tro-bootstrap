@@ -1,7 +1,7 @@
 {
   "name":        "m8tro-bootstrap",
   "description": "Modern UI-inspired Bootstrap theme",
-  "version":     "3.3.1+1",
+  "version":     "3.3.2",
   "author":      "Jan T. Sott",
   "homepage":    "http://idleberg.github.io/m8tro-bootstrap/",
  
@@ -52,9 +52,9 @@
     "gulp-prompt":         "^0.1.1",
     "gulp-recess":         "^1.1.1",
     "gulp-uglify":         "^1.0.2",
-    "gulp-util":           "^3.0.1",
+    "gulp-util":           "^3.0.2",
     "gulp-watch":          "^3.0.0",
-    "less":                "^2.1.2",  
+    "less":                "^2.2.0",  
     "run-sequence":        "^1.0.2",
     "yargs":               "^1.3.3"
   },
