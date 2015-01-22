@@ -1,7 +1,7 @@
 {
   "name":        "m8tro-bootstrap",
   "description": "Modern UI-inspired Bootstrap theme",
-  "version":     "3.3.2",
+  "version":     "3.3.2+1",
   "author":      "Jan T. Sott",
   "homepage":    "http://idleberg.github.io/m8tro-bootstrap/",
 
@@ -33,7 +33,7 @@
   },
 
   "devDependencies": {
-    "fontawesome": "^4.2.0",
+    "fontawesome": "^4.3.0",
     "html5shiv":   "^3.7.2",
     "respond":     "^1.4.2"
   }

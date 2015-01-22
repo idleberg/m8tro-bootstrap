@@ -45,7 +45,7 @@ Use the style-sheet from a [release](https://github.com/idleberg/m8tro-bootstrap
 
 As of version 3.3.1, the style-sheet is hosted on [cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap):
 
-    https://cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.1/m8tro.min.css
+    https://cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.2/m8tro.min.css
 
 **Note:** It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub.
 
