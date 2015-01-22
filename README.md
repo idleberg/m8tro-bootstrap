@@ -70,6 +70,8 @@ Task    | Description
 `clean` | delete contents of distribution folder
 `lint`  | lint included LESS and JavaScript files
 
+A special case is building the theme for [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), which you can do using `gulp setup --listr`.
+
 ### Bash script
 
 1. Clone the repository `git clone https://github.com/idleberg/m8tro-bootstrap.git`
