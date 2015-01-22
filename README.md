@@ -70,7 +70,7 @@ Task    | Description
 `clean` | delete contents of distribution folder
 `lint`  | lint included LESS and JavaScript files
 
-A special case is building the theme for [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), which you can do using `gulp setup --listr`.
+A special case is building the theme for [Bootstrap Listr](https://github.com/idleberg/Bootstrap-Listr), which only uses a subset of Bootstrap's features. To do so use `gulp setup --listr`. The resulting CSS will be half the size, the JavaScript about a twelfth.
 
 ### Bash script
 
