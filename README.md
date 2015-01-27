@@ -37,18 +37,20 @@ Pre-compiled CSS files can be installed using [Bower](http://bower.io/) or [npm]
  	npm install m8tro-bootstrap
 ```
 
+### CDN
+
+As of version 3.3.2, the style-sheet is hosted various content delivery networks (CDN). Serving files via SSL is encouraged, though you can always use [schemeless URLs](http://www.paulirish.com/2010/the-protocol-relative-url/) as well.
+
+Service  | URL
+---------|----
+[cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap)   | `//cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.2/m8tro.min.css`
+[jsDelivr](http://www.jsdelivr.com/#!bootstrap.m8tro) | `//cdn.jsdelivr.net/bootstrap.m8tro/3.3.2/m8tro.min.css`
+
+**Note:** It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub.
+
 ### Manual Installation
 
 Use the style-sheet from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or downlaod the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
-
-### CDN
-
-As of version 3.3.2, the style-sheet is hosted on [cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap) and [jsDelivr](http://www.jsdelivr.com/#!bootstrap.m8tro). Serving via SSL is encouraged, though both services can be used with [schemeless URLs](http://www.paulirish.com/2010/the-protocol-relative-url/):
-
-    //cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.2/m8tro.min.css
-    //cdn.jsdelivr.net/bootstrap.m8tro/3.3.2/m8tro.min.css
-
-**Note:** It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub.
 
 ## Developers
 
