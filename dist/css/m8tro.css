@@ -1,5 +1,5 @@
 /*!
- * M8tro 3.3.2+1
+ * M8tro 3.3.2+2
  * Homepage: http://github.com/idleberg/m8tro-bootstrap
  * Copyright 2014-2015 Jan T. Sott
  * Licensed under MIT
@@ -6636,6 +6636,15 @@ a.list-group-item:focus {
 .nav-tabs > li > a:hover {
   border-color: #727272;
   border-bottom-color: transparent;
+}
+td:hover > .fa {
+  color: #000000;
+}
+.fa {
+  color: #647687;
+}
+.fa-home {
+  color: #000000;
 }
 .control-label {
   font-weight: bolder;
