@@ -6637,15 +6637,6 @@ a.list-group-item:focus {
   border-color: #727272;
   border-bottom-color: transparent;
 }
-td:hover > .fa {
-  color: #000000;
-}
-.fa {
-  color: #647687;
-}
-.fa-home {
-  color: #000000;
-}
 .control-label {
   font-weight: bolder;
   font-size: 66.66666667%;
