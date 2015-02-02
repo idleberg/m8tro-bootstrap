@@ -455,14 +455,6 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   background-size: 4px 100%;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-
 // Navbar =====================================================================
 
 .navbar {
@@ -795,4 +787,25 @@ input, {
   color: @link-color;
   background-color: @body-bg;
   border: 1px @link-color solid;
+}
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
 }
