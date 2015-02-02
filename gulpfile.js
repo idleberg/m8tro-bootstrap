@@ -401,8 +401,8 @@ gulp.task('setup', ['clean'], function(){
             }
 
             _less.push('src/themes/m8tro/palette.less');
-            _less.push('src/themes/m8tro-variables.less');
-            _less.push('src/themes/m8tro-theme.less');
+            _less.push('src/themes/m8tro/variables.less');
+            _less.push('src/themes/m8tro/theme.less');
 
             console.log('\n'+_less.length+' styles, '+_js.length+' scripts and '+_fonts.length+' fonts in total');
             console.log('Crunching…');
