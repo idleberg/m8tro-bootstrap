@@ -60,7 +60,7 @@
     "less":                  "^2.3.1",
     "less-plugin-clean-css": "^1.5.0",
     "run-sequence":          "^1.0.2",
-    "yargs":                 "^2.1.1"
+    "yargs":                 "^3.0.4"
   },
  
    "scripts": {
