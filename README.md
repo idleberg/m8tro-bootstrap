@@ -50,7 +50,7 @@ Service  | URL
 
 ### Manual Installation
 
-Use the style-sheet from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or downlaod the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
+Use the style-sheet from a [release](https://github.com/idleberg/m8tro-bootstrap/releases) or download the latest development version of [m8tro.min.css](https://raw.githubusercontent.com/idleberg/m8tro-bootstrap/master/dist/css/m8tro.min.css).
 
 ## Developers
 
