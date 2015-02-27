@@ -19,7 +19,6 @@ var prefix   = require('gulp-autoprefixer'),
     del      = require('del'),
     gulp     = require('gulp'),
     htmlval  = require('gulp-html-validator'),
-    inject   = require('gulp-inject'),
     jshint   = require('gulp-jshint'),
     jsonlint = require('gulp-json-lint'),
     less     = require('gulp-less'),
@@ -101,7 +100,7 @@ gulp.task('htmlval', function () {
 // Lint LESS
 gulp.task('lesslint', function() {
   gulp.src([
-      'src/theme/**/*.less'
+      '/src/theme/**/*.less'
     ])
     .pipe(cache('linting_less'))
     .pipe(recess())
@@ -140,10 +139,7 @@ gulp.task('fa_fonts', function() {
 
   console.log('+fontawesome-webfont.*');
   gulp.src([
-    'bower_components/fontawesome/fonts/fontawesome-webfont.eot',
-    'bower_components/fontawesome/fonts/fontawesome-webfont.svg',
-    'bower_components/fontawesome/fonts/fontawesome-webfont.ttf',
-    'bower_components/fontawesome/fonts/fontawesome-webfont.woff'
+    '/bower_components/fontawesome/fonts/fontawesome-webfont.*'
   ])
   .pipe(gulp.dest(__dirname+'/dist/fonts/'));
 });
@@ -445,23 +441,13 @@ gulp.task('clean', function () {
 });
 
 
-// Injection task
-gulp.task('local', function () {
-  var target = gulp.src('index.html');
-  var sources = gulp.src(['dist/css/*','src/js/*'], {read: false});
-
-  return target.pipe(inject(sources))
-    .pipe(gulp.dest(''));
-});
-
-
 // Watch task
 gulp.task('watch', function () {
    gulp.watch([
             'bower.json',
             'gulpfile.js',
             'package.json',
-            'src/**/*.less',
+            '/src/**/*.less',
             'index.html'
          ],
          ['lint']);
