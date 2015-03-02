@@ -78,8 +78,7 @@ a.list-group-item:hover, a.list-group-item:focus  {
 
 
 .nav-tabs>li>a:hover {
-  border-color: @gray-light;
-  border-bottom-color: transparent;
+  border-bottom-color: @body-bg;
 }
 
 td:hover > .fa {color: @body-bg;}
@@ -157,6 +156,10 @@ background-color: @m8tro-theme;
 
 .nav-tabs>li>a,.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
   color: @link-color;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border-bottom-color: @body-bg;
 }
 
 .nav-pills>li.active>a {
