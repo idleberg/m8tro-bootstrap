@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>M8tro Bootstrap Theme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <style type="text/css">footer{margin-top:50px;margin-bottom:20px}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.modal-dialog{width:inherit;margin:0}.fa-clipboard{color:white !important}</style>
+  <style type="text/css">footer{margin-top:50px;margin-bottom:20px}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.modal-dialog{width:inherit;margin:0}.fa-clipboard{color:white !important;}</style>
   <link rel="stylesheet" href="dist/css/m8tro.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="http://s.idleberg.com/m8tro-ico/favicon.png" />
@@ -32,7 +32,6 @@
           <div class="clearfix">
 
             <p>Built upon <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, released under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
-
           </div>
         </div>
 
@@ -559,6 +558,13 @@
                   </div>
                 </div>
                 <div class="form-group">
+                  <label class="col-lg-2 control-label">Slider</label>
+                  <div class="col-lg-10">
+                    <input type="range" name="range" min="0" max="100" value="33">
+                    <input type="range" name="range" min="0" max="100" value="66">
+                  </div>
+                </div>
+                <div class="form-group">
                   <label for="select" class="col-lg-2 control-label">Selects</label>
                   <div class="col-lg-10">
                     <select class="form-control" id="select">
@@ -660,7 +666,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <h2 id="nav-tabs">Tabs</h2>
           <div class="bs-component">
             <ul class="nav nav-tabs" style="margin-bottom: 15px;">
@@ -694,7 +700,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <h2 id="nav-pills">Pills</h2>
           <div class="bs-component">
             <ul class="nav nav-pills">
@@ -736,6 +742,10 @@
             </ul>
           </div>
         </div>
+      </div>
+
+
+      <div class="row">
         <div class="col-lg-4">
           <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
           <div class="bs-component">
@@ -773,10 +783,6 @@
           </div>
 
         </div>
-      </div>
-
-
-      <div class="row">
         <div class="col-lg-4">
           <h2 id="pagination">Pagination</h2>
           <div class="bs-component">
