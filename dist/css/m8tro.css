@@ -6498,6 +6498,9 @@ a,
 .breadcrumb a:hover {
   text-decoration: underline;
 }
+a:focus {
+  outline: none;
+}
 input,
 textarea,
 keygen,
@@ -6558,8 +6561,7 @@ a.list-group-item:focus {
   text-decoration: none;
 }
 .nav-tabs > li > a:hover {
-  border-color: #727272;
-  border-bottom-color: transparent;
+  border-bottom-color: #000000;
 }
 td:hover > .fa {
   color: #000000;
@@ -6658,6 +6660,11 @@ td:hover > .fa {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #ffffff;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border-bottom-color: #000000;
 }
 .nav-pills > li.active > a {
   color: #ffffff;
@@ -7092,7 +7099,7 @@ input:focus {
   border-color: #80c342;
 }
 .navbar-form .form-control {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -7735,4 +7742,22 @@ input:focus {
   .col-lg-offset-0 {
     margin-left: 0%;
   }
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin-bottom: 11px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 11px;
+  background: #4a4a4a;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #ffffff;
+  height: 11px;
+  width: 13px;
+  background: #ffffff;
+}
+input[type=range]:focus {
+  outline: none;
 }
