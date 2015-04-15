@@ -3,6 +3,7 @@
   "description": "Bootstrap theme inspired by Windows Modern UI (aka Metro)",
   "version":     "3.3.4",
   "author":      "Jan T. Sott",
+  "filename":    "m8tro.min.css",
   "homepage":    "http://idleberg.github.io/m8tro-bootstrap/",
  
   "repository": {
@@ -38,31 +39,39 @@
   ],
  
   "devDependencies": {
-    "bower":                 "^1.3.12",
-    "better-console":        "^0.2.3",
+    "better-console":        "^0.2.4",
+    "bower":                 "^1.4.1",
     "del":                   "^1.1.1",
     "gulp":                  "^3.8.11",
     "gulp-autoprefixer":     "^2.1.0",
-    "gulp-cached":           "^1.0.2",
-    "gulp-concat":           "^2.5.0",
+    "gulp-cached":           "^1.0.4",
+    "gulp-concat":           "^2.5.2",
     "gulp-csslint":          "^0.1.5",
     "gulp-cssmin":           "^0.1.6",
     "gulp-html-validator":   "^0.0.5",
-    "gulp-jshint":           "^1.9.0",
+    "gulp-jshint":           "^1.10.0",
     "gulp-json-lint":        "^0.1.0",
-    "gulp-less":             "^3.0.0",
+    "gulp-less":             "^3.0.2",
     "gulp-prompt":           "^0.1.2",
-    "gulp-recess":           "^1.1.1",
-    "gulp-uglify":           "^1.1.0",
-    "gulp-util":             "^3.0.3",
-    "gulp-watch":            "^4.1.0",
-    "less":                  "^2.3.1",
+    "gulp-recess":           "^1.1.2",
+    "gulp-uglify":           "^1.2.0",
+    "gulp-util":             "^3.0.4",
+    "gulp-watch":            "^4.2.4",
+    "less":                  "^2.5.0",
     "less-plugin-clean-css": "^1.5.0",
     "run-sequence":          "^1.0.2",
-    "yargs":                 "^3.4.0"
+    "yargs":                 "^3.7.2"
   },
  
    "scripts": {
     "postinstall": "bower install"
-  }
+  },
+
+  "npmName": "m8tro-bootstrap",
+   "npmFileMap": [{
+     "basePath": "/dist/css/",
+     "files": [
+       "m8tro.min.css"
+     ]
+   }]
 }
