@@ -4995,7 +4995,6 @@ a.thumbnail.active {
 .progress.active .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
@@ -6555,7 +6554,7 @@ a,
 table a:hover,
 .table a:hover {
   text-decoration: underline;
-  color: #000000;
+  color: #ffffff;
 }
 a.text-muted:hover {
   color: inherit;
