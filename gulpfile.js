@@ -214,7 +214,7 @@ gulp.task('setup', ['clean'], function(){
   _js    = [], 
   _less  = [
     _dir+'less/variables.less',
-    _dir+'less/mixins.less',
+    _dir+'less/mixins/*.less',
     _dir+'less/normalize.less'
   ];
 
@@ -232,7 +232,7 @@ gulp.task('setup', ['clean'], function(){
             console.log('\nBuilding custom M8tro theme:');
 
             console.log('+variables.less');
-            console.log('+mixins.less');
+            console.log('+mixins/*.less');
             console.log('+normalize.less');
 
             if (res.components.indexOf('Print media styles')  > -1 ) {
