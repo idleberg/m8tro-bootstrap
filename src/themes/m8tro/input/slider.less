@@ -3,21 +3,25 @@
 input[type=range]{
     -webkit-appearance: none;
     margin-bottom: @slider-height;
-}
 
-input[type=range]::-webkit-slider-runnable-track {
-    height: @slider-height;
-    background: @gray;
-}
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track,
+    &::-ms-track {
+        height: @slider-height;
+        background: @gray;
+    }
 
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid @text-color;
-    height: @slider-height;
-    width: 13px;
-    background: @text-color;
-}
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb,
+    &::-ms-thumb {
+        -webkit-appearance: none;
+        border: 1px solid @text-color;
+        height: @slider-height;
+        width: 13px;
+        background: @text-color;
+    }
 
-input[type=range]:focus {
-  outline: none;
+    &:focus {
+        outline: none;
+    }
 }
