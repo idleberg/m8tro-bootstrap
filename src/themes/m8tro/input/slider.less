@@ -3,21 +3,42 @@
 input[type=range]{
     -webkit-appearance: none;
     margin-bottom: @slider-height;
-}
 
-input[type=range]::-webkit-slider-runnable-track {
-    height: @slider-height;
-    background: @gray;
-}
+    &::-webkit-slider-runnable-track {
+        height: @slider-height;
+        background: @gray;
+    }
+    &::-moz-range-track {
+        height: @slider-height;
+        background: @gray;
+    }
+    &::-ms-track {
+        height: @slider-height;
+        background: @gray;
+    }
 
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid @text-color;
-    height: @slider-height;
-    width: 13px;
-    background: @text-color;
-}
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid @text-color;
+        height: @slider-height;
+        width: 13px;
+        background: @text-color;
+    }
+    &::-moz-range-thumb {
+        -moz-appearance: none;
+        border: 1px solid @text-color;
+        height: @slider-height;
+        width: 13px;
+        background: @text-color;
+    }
+    &::-ms-thumb {
+        border: 1px solid @text-color;
+        height: @slider-height;
+        width: 13px;
+        background: @text-color;
+    }
 
-input[type=range]:focus {
-  outline: none;
+    &:focus {
+        outline: none;
+    }
 }
