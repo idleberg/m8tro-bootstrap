@@ -241,105 +241,153 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   border: transparent;
 }
 
-.btn-default {
+.btn-default,
+.dropdown-toggle.btn-default, {
   color: @link-color;
   border: 1px @gray-light solid;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color:@link-color;
+    border: 1px @link-color solid;
+    transition: none;
+  }
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+.btn-primary,
+.dropdown-toggle.btn-primary, {
   color: @link-color;
   border: 1px @link-color solid;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color: @body-bg;
+    border: 1px @link-color solid;
+  }
+
+  .btn-primary + .dropdown-menu {
+    border-color: @link-color;
+  }
+
+  .btn-primary + .dropdown-menu > .divider {
+    background-color: @link-color;
+  }
 }
 
-.btn-primary {
-  color: @link-color;
-  border: 1px @link-color solid;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  color: @body-bg;
-  background-color: @link-color;
-  // border: 1px @link-color solid;
-}
-
-.btn-success {
+.btn-success,
+.dropdown-toggle.btn-success, {
   color:@brand-success;
   border: 1px darken(@brand-success, 15%) solid;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color: @brand-success;
+    border: 1px @brand-success solid;
+  }
+
+  & + .dropdown-menu {
+    border-color: @brand-success;
+  }
+
+  & + .dropdown-menu > .divider {
+    background-color: @brand-success;
+  }
 }
 
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  color: @brand-success;
-  border: 1px @brand-success solid;
-}
-
-.btn-info {
+.btn-info,
+.dropdown-toggle.btn-info, {
   color: @brand-info;
   border: 1px darken(@brand-info, 15%) solid;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color: @brand-info;
+    border: 1px @brand-info solid;
+  }
+
+  & + .dropdown-menu {
+    border-color: @brand-info;
+  }
+
+  & + .dropdown-menu > .divider {
+    background-color: @brand-info;
+  }
 }
 
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-  color: @brand-info;
-  border: 1px @brand-info solid;
-}
-
-.btn-warning {
+.btn-warning,
+.dropdown-toggle.btn-warning, {
   color: @brand-warning;
   border: 1px darken(@brand-warning, 15%) solid;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color: @brand-warning;
+    border: 1px @brand-warning solid;
+  }
+
+  & + .dropdown-menu {
+    border-color: @brand-warning;
+  }
+
+  & + .dropdown-menu > .divider {
+    background-color: @brand-warning;
+  }
 }
 
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
-  color: @brand-warning;
-  border: 1px @brand-warning solid;
-}
-
-.btn-danger {
+.btn-danger,
+.dropdown-toggle.btn-danger, {
   color: @brand-danger;
   border: 1px darken(@brand-danger, 15%) solid;
-}
 
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
-  color: @brand-danger;
-  border: 1px @brand-danger solid;
-}
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open>.dropdown-toggle&,
+  .open>.dropdown-toggle&.focus,
+  .open>.dropdown-toggle&:focus,
+  .open>.dropdown-toggle&:hover, {
+    color: @brand-danger;
+    border: 1px @brand-danger solid;
+  }
 
-.btn-primary + .dropdown-menu {
-  border-color: @link-color;
-}
+  & + .dropdown-menu {
+    border-color: @brand-danger;
+  }
 
-.btn-primary + .dropdown-menu > .divider {
-  background-color: @link-color;
-}
-
-.btn-success + .dropdown-menu {
-  border-color: @brand-success;
-}
-
-.btn-info + .dropdown-menu {
-  border-color: @brand-info;
-}
-
-.btn-info + .dropdown-menu > .divider {
-  background-color: @brand-info;
-}
-
-.btn-success + .dropdown-menu > .divider {
-  background-color: @brand-success;
-}
-
-.btn-warning + .dropdown-menu {
-  border-color: @brand-warning;
-}
-
-.btn-warning + .dropdown-menu > .divider {
-  background-color: @brand-warning;
-}
-
-.btn-danger + .dropdown-menu {
-  border-color: @brand-danger;
-}
-
-.btn-danger + .dropdown-menu > .divider {
-  background-color: @brand-danger;
+  & + .dropdown-menu > .divider {
+    background-color: @brand-danger;
+  }
 }
 
 .jumbotron {

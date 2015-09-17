@@ -6967,106 +6967,190 @@ a.list-group-item.active > .badge,
   background-color: inherit;
   border: transparent;
 }
-.btn-default {
+.btn-default,
+.dropdown-toggle.btn-default {
   color: #ffffff;
   border: 1px #727272 solid;
 }
 .btn-default:hover,
+.dropdown-toggle.btn-default:hover,
 .btn-default:focus,
+.dropdown-toggle.btn-default:focus,
 .btn-default:active,
+.dropdown-toggle.btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.dropdown-toggle.btn-default.active,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-default:hover {
   color: #ffffff;
   border: 1px #ffffff solid;
+  -webkit-transition: none;
+          transition: none;
 }
-.btn-primary {
+.btn-primary,
+.dropdown-toggle.btn-primary {
   color: #ffffff;
   border: 1px #ffffff solid;
 }
 .btn-primary:hover,
+.dropdown-toggle.btn-primary:hover,
 .btn-primary:focus,
+.dropdown-toggle.btn-primary:focus,
 .btn-primary:active,
+.dropdown-toggle.btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.dropdown-toggle.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-primary:hover {
   color: #000000;
+  border: 1px #ffffff solid;
+}
+.btn-primary .btn-primary + .dropdown-menu,
+.dropdown-toggle.btn-primary .btn-primary + .dropdown-menu {
+  border-color: #ffffff;
+}
+.btn-primary .btn-primary + .dropdown-menu > .divider,
+.dropdown-toggle.btn-primary .btn-primary + .dropdown-menu > .divider {
   background-color: #ffffff;
 }
-.btn-success {
+.btn-success,
+.dropdown-toggle.btn-success {
   color: #80c342;
   border: 1px #5a8c2c solid;
 }
 .btn-success:hover,
+.dropdown-toggle.btn-success:hover,
 .btn-success:focus,
+.dropdown-toggle.btn-success:focus,
 .btn-success:active,
+.dropdown-toggle.btn-success:active,
 .btn-success.active,
-.open .dropdown-toggle.btn-success {
+.dropdown-toggle.btn-success.active,
+.open > .dropdown-toggle.btn-success,
+.open > .dropdown-toggle.dropdown-toggle.btn-success,
+.open > .dropdown-toggle.btn-success.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-success.focus,
+.open > .dropdown-toggle.btn-success:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-success:focus,
+.open > .dropdown-toggle.btn-success:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-success:hover {
   color: #80c342;
   border: 1px #80c342 solid;
 }
-.btn-info {
+.btn-success + .dropdown-menu,
+.dropdown-toggle.btn-success + .dropdown-menu {
+  border-color: #80c342;
+}
+.btn-success + .dropdown-menu > .divider,
+.dropdown-toggle.btn-success + .dropdown-menu > .divider {
+  background-color: #80c342;
+}
+.btn-info,
+.dropdown-toggle.btn-info {
   color: #3c9cd6;
   border: 1px #2273a3 solid;
 }
 .btn-info:hover,
+.dropdown-toggle.btn-info:hover,
 .btn-info:focus,
+.dropdown-toggle.btn-info:focus,
 .btn-info:active,
+.dropdown-toggle.btn-info:active,
 .btn-info.active,
-.open .dropdown-toggle.btn-info {
+.dropdown-toggle.btn-info.active,
+.open > .dropdown-toggle.btn-info,
+.open > .dropdown-toggle.dropdown-toggle.btn-info,
+.open > .dropdown-toggle.btn-info.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-info.focus,
+.open > .dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.btn-info:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-info:hover {
   color: #3c9cd6;
   border: 1px #3c9cd6 solid;
 }
-.btn-warning {
+.btn-info + .dropdown-menu,
+.dropdown-toggle.btn-info + .dropdown-menu {
+  border-color: #3c9cd6;
+}
+.btn-info + .dropdown-menu > .divider,
+.dropdown-toggle.btn-info + .dropdown-menu > .divider {
+  background-color: #3c9cd6;
+}
+.btn-warning,
+.dropdown-toggle.btn-warning {
   color: #faa61a;
   border: 1px #c37c04 solid;
 }
 .btn-warning:hover,
+.dropdown-toggle.btn-warning:hover,
 .btn-warning:focus,
+.dropdown-toggle.btn-warning:focus,
 .btn-warning:active,
+.dropdown-toggle.btn-warning:active,
 .btn-warning.active,
-.open .dropdown-toggle.btn-warning {
+.dropdown-toggle.btn-warning.active,
+.open > .dropdown-toggle.btn-warning,
+.open > .dropdown-toggle.dropdown-toggle.btn-warning,
+.open > .dropdown-toggle.btn-warning.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-warning.focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-warning:focus,
+.open > .dropdown-toggle.btn-warning:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-warning:hover {
   color: #faa61a;
   border: 1px #faa61a solid;
 }
-.btn-danger {
+.btn-warning + .dropdown-menu,
+.dropdown-toggle.btn-warning + .dropdown-menu {
+  border-color: #faa61a;
+}
+.btn-warning + .dropdown-menu > .divider,
+.dropdown-toggle.btn-warning + .dropdown-menu > .divider {
+  background-color: #faa61a;
+}
+.btn-danger,
+.dropdown-toggle.btn-danger {
   color: #ed1c24;
   border: 1px #af0e14 solid;
 }
 .btn-danger:hover,
+.dropdown-toggle.btn-danger:hover,
 .btn-danger:focus,
+.dropdown-toggle.btn-danger:focus,
 .btn-danger:active,
+.dropdown-toggle.btn-danger:active,
 .btn-danger.active,
-.open .dropdown-toggle.btn-danger {
+.dropdown-toggle.btn-danger.active,
+.open > .dropdown-toggle.btn-danger,
+.open > .dropdown-toggle.dropdown-toggle.btn-danger,
+.open > .dropdown-toggle.btn-danger.focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-danger.focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.open > .dropdown-toggle.dropdown-toggle.btn-danger:focus,
+.open > .dropdown-toggle.btn-danger:hover,
+.open > .dropdown-toggle.dropdown-toggle.btn-danger:hover {
   color: #ed1c24;
   border: 1px #ed1c24 solid;
 }
-.btn-primary + .dropdown-menu {
-  border-color: #ffffff;
-}
-.btn-primary + .dropdown-menu > .divider {
-  background-color: #ffffff;
-}
-.btn-success + .dropdown-menu {
-  border-color: #80c342;
-}
-.btn-info + .dropdown-menu {
-  border-color: #3c9cd6;
-}
-.btn-info + .dropdown-menu > .divider {
-  background-color: #3c9cd6;
-}
-.btn-success + .dropdown-menu > .divider {
-  background-color: #80c342;
-}
-.btn-warning + .dropdown-menu {
-  border-color: #faa61a;
-}
-.btn-warning + .dropdown-menu > .divider {
-  background-color: #faa61a;
-}
-.btn-danger + .dropdown-menu {
+.btn-danger + .dropdown-menu,
+.dropdown-toggle.btn-danger + .dropdown-menu {
   border-color: #ed1c24;
 }
-.btn-danger + .dropdown-menu > .divider {
+.btn-danger + .dropdown-menu > .divider,
+.dropdown-toggle.btn-danger + .dropdown-menu > .divider {
   background-color: #ed1c24;
 }
 .jumbotron .btn {
