@@ -29,7 +29,7 @@
   ],
 
   "dependencies": {
-    "bootstrap":   "4.0.0-alpha"
+    "bootstrap":   "^3.3.5"
   },
 
   "devDependencies": {

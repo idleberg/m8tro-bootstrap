@@ -6975,7 +6975,7 @@ a.list-group-item.active > .badge,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
-.open .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {
   color: #ffffff;
   border: 1px #ffffff solid;
 }
@@ -6990,7 +6990,6 @@ a.list-group-item.active > .badge,
 .open .dropdown-toggle.btn-primary {
   color: #000000;
   background-color: #ffffff;
-  border: 1px #00b3b5 solid;
 }
 .btn-success {
   color: #80c342;
