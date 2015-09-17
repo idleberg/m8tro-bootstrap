@@ -6990,7 +6990,7 @@ a.list-group-item.active > .badge,
 .open .dropdown-toggle.btn-primary {
   color: #000000;
   background-color: #ffffff;
-  border: 1px #ffffff solid;
+  border: 1px #00b3b5 solid;
 }
 .btn-success {
   color: #80c342;
@@ -7999,6 +7999,8 @@ input:focus {
 input[type=range] {
   -webkit-appearance: none;
   margin-bottom: 11px;
+  /* fix for FF unable to apply focus style bug  */
+  border: 0;
 }
 input[type=range]::-webkit-slider-runnable-track {
   height: 11px;
@@ -8013,4 +8015,42 @@ input[type=range]::-webkit-slider-thumb {
 }
 input[type=range]:focus {
   outline: none;
+}
+input[type=range]::-moz-range-track {
+  height: 11px;
+  background: #4a4a4a;
+  border: none;
+  border-radius: 0;
+}
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 11px;
+  width: 13px;
+  background: #ffffff;
+  border-radius: 0;
+}
+input[type=range]::-moz-focus-inner {
+  border: 0;
+}
+input[type=range]::-ms-track {
+  height: 11px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper {
+  background: #4a4a4a;
+  border-radius: 0;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 11px;
+  width: 13px;
+  background: #ffffff;
+  border-radius: 0;
 }

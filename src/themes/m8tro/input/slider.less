@@ -1,23 +1,76 @@
 @slider-height: 11px;
+@slider-width: 13px;
 
 input[type=range]{
     -webkit-appearance: none;
     margin-bottom: @slider-height;
-}
+    
+    /* fix for FF unable to apply focus style bug  */
+    border: 0;
 
-input[type=range]::-webkit-slider-runnable-track {
-    height: @slider-height;
-    background: @gray;
-}
+    // Webkit
+    &::-webkit-slider-runnable-track {
+        height: @slider-height;
+        background: @gray;
+    }
 
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid @text-color;
-    height: @slider-height;
-    width: 13px;
-    background: @text-color;
-}
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid @text-color;
+        height: @slider-height;
+        width: @slider-width;
+        background: @text-color;
+    }
 
-input[type=range]:focus {
-  outline: none;
+    &:focus {
+      outline: none;
+    }
+
+    // Firefox
+    &::-moz-range-track {
+        height: @slider-height;
+        background: @gray;
+        border: none;
+        border-radius: 0;
+    }
+
+    &::-moz-range-thumb {
+        border: none;
+        height: @slider-height;
+        width: @slider-width;
+        background: @text-color;
+        border-radius: 0;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &::-ms-track {
+        height: @slider-height;
+        
+        /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+        background: transparent;
+        
+        /*leave room for the larger thumb to overflow with a transparent border */
+        border-color: transparent;
+        border-width: 6px 0;
+
+        /*remove default tick marks*/
+        color: transparent;
+    }
+
+    &::-ms-fill-lower,
+    &::-ms-fill-upper {
+        background: @gray;
+        border-radius: 0;
+    }
+
+    &::-ms-thumb {
+        border: none;
+        height: @slider-height;
+        width: @slider-width;
+        background: @text-color;
+        border-radius: 0;
+    }
 }
