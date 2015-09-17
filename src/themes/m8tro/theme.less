@@ -261,7 +261,7 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 }
 
 .btn-primary,
-.dropdown-toggle.btn-primary, {
+.dropdown-toggle.btn-primary {
   color: @link-color;
   border: 1px @link-color solid;
 
@@ -273,7 +273,8 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
   .open>.dropdown-toggle&.focus,
   .open>.dropdown-toggle&:focus,
   .open>.dropdown-toggle&:hover, {
-    color: @link-color;
+    color: @body-bg;
+    background-color: @link-color;
     border: 1px @link-color solid;
   }
 
