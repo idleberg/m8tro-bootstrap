@@ -7014,7 +7014,7 @@ a.list-group-item.active > .badge,
 .open > .dropdown-toggle.dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover,
 .open > .dropdown-toggle.dropdown-toggle.btn-primary:hover {
-  color: #000000;
+  color: #ffffff;
   border: 1px #ffffff solid;
 }
 .btn-primary .btn-primary + .dropdown-menu,
