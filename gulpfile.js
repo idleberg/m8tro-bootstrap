@@ -31,6 +31,17 @@ var prefix   = require('gulp-autoprefixer'),
     watch    = require('gulp-watch'),
     argv     = require('yargs').argv;
 
+var browsers = [
+      "Android 2.3",
+      "Android >= 4",
+      "Chrome >= 20",
+      "Firefox >= 24",
+      "Explorer >= 8",
+      "iOS >= 6",
+      "Opera >= 12",
+      "Safari >= 6"
+];
+
 
 /*
  * Task combos
@@ -53,7 +64,7 @@ gulp.task('lint',    ['html', 'selftest']);
 /*
  * Sub-tasks
  */
-gulp.task('make', ['clean'], function(callback) {
+gulp.task('make', function(callback) {
 
  console.log('\nBuilding M8tro theme:');
  sequence(
@@ -108,7 +119,7 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(prefix())
+    .pipe(prefix({browsers: browsers}))
     .pipe(concat('m8tro.css'))
     .pipe(debug({title: 'copy:'}))
     .pipe(gulp.dest('dist/css/'))
@@ -155,7 +166,7 @@ gulp.task('bootstrapjs', function() {
 
 
 // Customize Bootstrap assets
-gulp.task('setup', ['clean'], function(){
+gulp.task('setup', function(){
 
   // Include Bootstrap Listr LESS dependencies
   if (argv.listr) {
@@ -405,7 +416,7 @@ gulp.task('setup', ['clean'], function(){
                       generateSourceMap: false, // default true
                       paths: [ path.join(__dirname, 'less', 'includes') ]
                     }))
-                .pipe(prefix())
+                .pipe(prefix({browsers: browsers}))
                 .pipe(concat('m8tro.css'))
                 .pipe(gulp.dest('dist/css/'))
                 .pipe(concat('m8tro.min.css'))
