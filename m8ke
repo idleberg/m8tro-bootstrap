@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.4.3
+VERSION=0.5.0
 set -e
 
 # Functions
@@ -26,12 +26,19 @@ function bower_error(){
 echo $'\n'm8ke-script $VERSION
 echo =================
 
+if [ -e 'node_modules' ]
+then
+    echo "Node packages seem to be in place"
+else
+    echo "Node packages not found, downloading"
+    npm install || npm_error
+fi
+
 if [ -e 'bower_components' ]
 then
-    echo Bower components seem to be in place
+    echo "Bower components seem to be in place"
 else
-    echo Bower components not found
-    echo Downloading components
+    echo "Bower components not found, downloading"
     bower install || bower_error
 fi
 
