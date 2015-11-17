@@ -11,8 +11,7 @@
 var meta     = require('./package.json');
 
 // Gulp plugins
-var prefix   = require('gulp-autoprefixer'),
-    cache    = require('gulp-cached'),
+var cache    = require('gulp-cached'),
     concat   = require('gulp-concat'),
     console  = require('better-console'),
     cssmin   = require('gulp-cssmin'),
@@ -31,16 +30,8 @@ var prefix   = require('gulp-autoprefixer'),
     watch    = require('gulp-watch'),
     argv     = require('yargs').argv;
 
-var browsers = [
-      "Android 2.3",
-      "Android >= 4",
-      "Chrome >= 20",
-      "Firefox >= 24",
-      "Explorer >= 8",
-      "iOS >= 6",
-      "Opera >= 12",
-      "Safari >= 6"
-];
+var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
+    autoprefix = new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
 
 
 /*
@@ -117,9 +108,9 @@ gulp.task('less', function () {
   gulp.src('src/themes/m8tro/build.less')
     .pipe(debug({title: 'lessc:'}))
     .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(prefix({browsers: browsers}))
+        plugins: autoprefix,
+        paths: [ path.join(__dirname, 'less', 'includes') ]
+      }))
     .pipe(concat('m8tro.css'))
     .pipe(debug({title: 'copy:'}))
     .pipe(gulp.dest('dist/css/'))
@@ -413,10 +404,9 @@ gulp.task('setup', function(){
             gulp.src(_less)
                 .pipe(concat('m8tro.less'))
                 .pipe(less({
-                      generateSourceMap: false, // default true
+                      plugins: autoprefix,
                       paths: [ path.join(__dirname, 'less', 'includes') ]
                     }))
-                .pipe(prefix({browsers: browsers}))
                 .pipe(concat('m8tro.css'))
                 .pipe(gulp.dest('dist/css/'))
                 .pipe(concat('m8tro.min.css'))
