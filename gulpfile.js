@@ -30,8 +30,21 @@ var cache    = require('gulp-cached'),
     watch    = require('gulp-watch'),
     argv     = require('yargs').argv;
 
+// Autoprefixer supported browsers
+var autoprefixerBrowsers = [
+    "Android 2.3",
+    "Android >= 4",
+    "Chrome >= 20",
+    "Firefox >= 24",
+    "Explorer >= 8",
+    "iOS >= 6",
+    "Opera >= 12",
+    "Safari >= 6"
+];
+
+// LESS plugins
 var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-    autoprefix = new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
+    autoprefix = new LessPluginAutoPrefix({ browsers: autoprefixerBrowsers });
 
 
 /*
@@ -108,7 +121,7 @@ gulp.task('less', function () {
   gulp.src('src/themes/m8tro/build.less')
     .pipe(debug({title: 'lessc:'}))
     .pipe(less({
-        plugins: autoprefix,
+        plugins: [autoprefix],
         paths: [ path.join(__dirname, 'less', 'includes') ]
       }))
     .pipe(concat('m8tro.css'))
@@ -404,7 +417,7 @@ gulp.task('setup', function(){
             gulp.src(_less)
                 .pipe(concat('m8tro.less'))
                 .pipe(less({
-                      plugins: autoprefix,
+                      plugins: [autoprefix],
                       paths: [ path.join(__dirname, 'less', 'includes') ]
                     }))
                 .pipe(concat('m8tro.css'))
