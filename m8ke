@@ -42,6 +42,7 @@ else
     bower install || bower_error
 fi
 
+AUTOPREFIX="Android 2.3,Android >= 4,Chrome >= 20,Firefox >= 24,Explorer >= 8,iOS >= 6,Opera >= 12,Safari >= 6"
 if [ -z $1 ]
 then
     for THEME in 'src/themes'/*
@@ -50,20 +51,20 @@ then
        echo $'\n'$THEME_BASE/build.less found
 
         echo Compiling $THEME_BASE.css
-        lessc --silent src/themes/$THEME_BASE/build.less dist/css/$THEME_BASE.css
+        lessc --silent src/themes/$THEME_BASE/build.less dist/css/$THEME_BASE.css --autoprefix=$AUTOPREFIX
 
         echo Compiling $THEME_BASE.min.css $'\n'
-        lessc -x --clean-css --silent src/themes/$THEME_BASE/build.less dist/css/$THEME_BASE.min.css
+        lessc -x --clean-css --silent src/themes/$THEME_BASE/build.less dist/css/$THEME_BASE.min.css --autoprefix=$AUTOPREFIX
     done
 else
     THEME=$1
     echo $'\n'$THEME/build.less found
 
     echo Compiling $THEME.css
-    lessc --silent src/themes/$THEME/build.less dist/css/$THEME.css
+    lessc --silent src/themes/$THEME/build.less dist/css/$THEME.css --autoprefix=$AUTOPREFIX
 
     echo Compiling $THEME.min.css $'\n'
-    lessc -x --clean-css --silent src/themes/$THEME/build.less dist/css/$THEME.min.css
+    lessc -x --clean-css --silent src/themes/$THEME/build.less dist/css/$THEME.min.css --autoprefix=$AUTOPREFIX
 fi
 
 if [ ! -e 'dist/js/' ]
