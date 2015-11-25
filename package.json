@@ -1,7 +1,7 @@
 {
   "name": "m8tro-bootstrap",
   "description": "Bootstrap theme inspired by Windows Modern UI (aka Metro)",
-  "version": "3.3.5+4",
+  "version": "3.3.6",
   "author": "Jan T. Sott",
   "filename": "m8tro.min.css",
   "homepage": "http://idleberg.github.io/m8tro-bootstrap/",
@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "better-console": "^0.2.4",
-    "bower": "^1.5.2",
+    "bower": "^1.6.6",
     "del": "^2.1.0",
     "gulp": "^3.9.0",
     "gulp-cached": "^1.1.0",
