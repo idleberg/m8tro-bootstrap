@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.5.1
+VERSION=0.5.2
 set -e
 
 # Functions
@@ -13,7 +13,7 @@ function bower_error(){
     while true; do
         read -p "Bower is not installed. Do you want to install it now? (y/n) " yn
         case $yn in
-            [Yy*]* ) npm install bower || npm_error; break;;
+            [Yy*]* ) npm install -g bower || npm_error; break;;
             [Nn]* ) echo 'Aborted by user.'; exit;;
         esac
     done
