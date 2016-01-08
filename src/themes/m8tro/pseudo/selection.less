@@ -1,29 +1,35 @@
-::selection {
-    color: @body-bg;
-    background-color: @text-color;
-}
-
-.text-primary::selection {
-   color: @body-bg;
-   background-color: @brand-primary;
-}
-
-.text-success::selection {
-   color: @body-bg;
-   background-color: @brand-success;
-}
-
-.text-info::selection {
-   color: @body-bg;
-   background-color: @brand-info;
-}
-
-.text-warning::selection {
-   color: @body-bg;
-   background-color: @brand-warning;
-}
-
-.text-danger::selection {
-   color: @body-bg;
-   background-color: @brand-danger;
+ 
+::selection {   
+    color: @body-bg;    
+    background: @text-color;    
+}   
+    
+.text-primary, .text-primary a {   
+    &::selection {    
+        background: @brand-primary;   
+    }   
+}   
+    
+.text-success, .text-success a{    
+    &::selection {  
+        background: @brand-success;    
+    }   
+}   
+    
+.text-info, .text-info a{    
+    &::selection { 
+        background: @brand-info;    
+    }   
+}   
+    
+.text-warning, .text-warning a {   
+    &::selection {
+        background: @brand-warning;   
+    }   
+}   
+    
+.text-danger, .text-danger a{    
+    &::selection {
+        background: @brand-danger;    
+    }   
 }

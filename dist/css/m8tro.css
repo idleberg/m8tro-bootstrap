@@ -8237,49 +8237,49 @@ input[type=range]::-ms-thumb {
 }
 ::-moz-selection {
   color: #000;
-  background-color: #fff;
+  background: #fff;
 }
 ::selection {
   color: #000;
-  background-color: #fff;
+  background: #fff;
 }
-.text-primary::-moz-selection {
-  color: #000;
-  background-color: #00b3b5;
+.text-primary::-moz-selection,
+.text-primary a::-moz-selection {
+  background: #00b3b5;
 }
-.text-primary::selection {
-  color: #000;
-  background-color: #00b3b5;
+.text-primary::selection,
+.text-primary a::selection {
+  background: #00b3b5;
 }
-.text-success::-moz-selection {
-  color: #000;
-  background-color: #80c342;
+.text-success::-moz-selection,
+.text-success a::-moz-selection {
+  background: #80c342;
 }
-.text-success::selection {
-  color: #000;
-  background-color: #80c342;
+.text-success::selection,
+.text-success a::selection {
+  background: #80c342;
 }
-.text-info::-moz-selection {
-  color: #000;
-  background-color: #3c9cd6;
+.text-info::-moz-selection,
+.text-info a::-moz-selection {
+  background: #3c9cd6;
 }
-.text-info::selection {
-  color: #000;
-  background-color: #3c9cd6;
+.text-info::selection,
+.text-info a::selection {
+  background: #3c9cd6;
 }
-.text-warning::-moz-selection {
-  color: #000;
-  background-color: #faa61a;
+.text-warning::-moz-selection,
+.text-warning a::-moz-selection {
+  background: #faa61a;
 }
-.text-warning::selection {
-  color: #000;
-  background-color: #faa61a;
+.text-warning::selection,
+.text-warning a::selection {
+  background: #faa61a;
 }
-.text-danger::-moz-selection {
-  color: #000;
-  background-color: #ed1c24;
+.text-danger::-moz-selection,
+.text-danger a::-moz-selection {
+  background: #ed1c24;
 }
-.text-danger::selection {
-  color: #000;
-  background-color: #ed1c24;
+.text-danger::selection,
+.text-danger a::selection {
+  background: #ed1c24;
 }
