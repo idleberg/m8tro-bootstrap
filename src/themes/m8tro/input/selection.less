@@ -1,0 +1,51 @@
+::-moz-selection,
+::-webkit-selection,
+::selection {
+    color: @body-bg;
+    background-color: @text-color;
+}
+
+.text-primary {
+    &::-moz-selection,
+    &::-webkit-selection,
+    &::selection {
+        color: @body-bg;
+        background-color: @brand-primary;
+    }
+}
+
+.text-success,.has-success {
+    &::-moz-selection,
+    &::-webkit-selection,
+    &::selection {
+        color: @body-bg;
+        background-color: @@brand-success;
+    }
+}
+
+.text-info {
+    &::-moz-selection,
+    &::-webkit-selection,
+    &::selection {
+        color: @body-bg;
+        background-color: @brand-info;
+    }
+}
+
+.text-warning {
+    &::-moz-selection,
+    &::-webkit-selection,
+    &::selection {
+        color: @body-bg;
+        background-color: @brand-warning;
+    }
+}
+
+.text-danger {
+    &::-moz-selection,
+    &::-webkit-selection,
+    &::selection {
+        color: @body-bg;
+        background-color: @brand-danger;
+    }
+}

@@ -49,9 +49,39 @@ table a:hover, .table a:hover {
   color: @link-color;
 }
 
-a.text-muted:hover {
-  color:inherit;
-  text-decoration: underline;
+tr:hover a.text-muted {
+    color: @body-bg;
+}
+
+.text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger {
+   a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.text-muted a:hover {
+  color: darken(@text-muted, 10%);
+}
+
+.text-primary a:hover {
+  color: darken(@brand-primary, 10%);
+}
+
+.text-success a:hover {
+  color: darken(@brand-success, 10%);
+}
+
+.text-info a:hover {
+  color: darken(@brand-info, 10%);
+}
+
+.text-warning a:hover {
+  color: darken(@brand-warning, 10%);
+}
+
+.text-danger a:hover {
+  color: darken(@brand-danger, 10%);
 }
 
 a.list-group-item:hover, a.list-group-item:focus  {
