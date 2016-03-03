@@ -30,11 +30,11 @@ Style-sheets are meant to be used instead of `bootstrap.min.css`, there's no nee
 Pre-compiled CSS files can be installed using [Bower](http://bower.io/) or [npm](https://www.npmjs.com):
 
 ```bash
-    # Install from Bower
-    bower install m8tro-bootstrap
-	
-	# Install from npm
- 	npm install m8tro-bootstrap
+# Install from Bower
+bower install m8tro-bootstrap
+
+# Install from npm
+npm install m8tro-bootstrap
 ```
 
 ### CDN
@@ -87,7 +87,7 @@ Anybody can contribute new features and bug fixes by cloning the repository, and
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Jan T. Sott
+Copyright (c) 2014-2016 Jan T. Sott
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
