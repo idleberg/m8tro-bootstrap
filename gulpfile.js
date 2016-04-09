@@ -14,6 +14,7 @@ var meta     = require('./package.json');
 var cache    = require('gulp-cached'),
     concat   = require('gulp-concat'),
     console  = require('better-console'),
+    csscomb  = require('gulp-csscomb'),
     cssmin   = require('gulp-cssmin'),
     debug    = require('gulp-debug'),
     del      = require('del'),
@@ -124,6 +125,7 @@ gulp.task('less', function () {
         plugins: [autoprefix],
         paths: [ path.join(__dirname, 'less', 'includes') ]
       }))
+    .pipe(csscomb())
     .pipe(concat('m8tro.css'))
     .pipe(debug({title: 'copy:'}))
     .pipe(gulp.dest('dist/css/'))
@@ -420,6 +422,7 @@ gulp.task('setup', function(){
                       plugins: [autoprefix],
                       paths: [ path.join(__dirname, 'less', 'includes') ]
                     }))
+                .pipe(csscomb())
                 .pipe(concat('m8tro.css'))
                 .pipe(gulp.dest('dist/css/'))
                 .pipe(concat('m8tro.min.css'))
