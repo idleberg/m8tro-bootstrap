@@ -57,9 +57,6 @@
     "run-sequence": "^1.1.5",
     "yargs": "^3.31.0"
   },
-  "scripts": {
-    "postinstall": "bower install"
-  },
   "npmName": "m8tro-bootstrap",
   "npmFileMap": [
     {
