@@ -37,7 +37,7 @@
     "bootstrap": "^3.3.6",
     "fontawesome": "^4.5.0",
     "jquery": "^2.2.3"
-  }
+  },
   "devDependencies": {
     "better-console": "^0.2.4",
     "del": "^2.2.0",
