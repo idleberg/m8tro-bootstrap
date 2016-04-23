@@ -118,6 +118,7 @@ gulp.task('htmlval', function () {
 gulp.task('less', function () {
   
   console.log('\nCrunching…');
+  
   gulp.src('src/themes/m8tro/build.less')
     .pipe(debug({title: 'lessc:'}))
     .pipe(less({
@@ -130,6 +131,20 @@ gulp.task('less', function () {
     .pipe(concat('m8tro.min.css'))
     .pipe(debug({title: 'cssmin:'}))
     .pipe(cssmin())
+    .pipe(gulp.dest('dist/css/')),
+
+  gulp.src('src/themes/m8tro/extras/build.less')
+    .pipe(debug({title: 'lessc:'}))
+    .pipe(less({
+        plugins: [autoprefix],
+        paths: [ path.join(__dirname, 'less', 'includes') ]
+      }))
+    .pipe(concat('m8tro-extras.css'))
+    .pipe(debug({title: 'copy:'}))
+    .pipe(gulp.dest('dist/css/'))
+    .pipe(concat('m8tro-extras.min.css'))
+    .pipe(debug({title: 'cssmin:'}))
+    .pipe(cssmin())
     .pipe(gulp.dest('dist/css/'));
 });
 
@@ -137,7 +152,7 @@ gulp.task('less', function () {
 // Copy tasks
 gulp.task('fa_css', function() {
   
-  gulp.src('bower_components/fontawesome/css/font-awesome.min.css')
+  gulp.src('node_packages/fontawesome/css/font-awesome.min.css')
   .pipe(debug({title: 'copy:'}))
   .pipe(gulp.dest(__dirname+'/dist/css/'));
 });
@@ -147,7 +162,7 @@ gulp.task('fa_css', function() {
 gulp.task('fa_fonts', function() {
 
   gulp.src([
-    'bower_components/fontawesome/fonts/fontawesome-webfont.*'
+    'node_packages/fontawesome/fonts/fontawesome-webfont.*'
   ])
   .pipe(debug({title: 'copy:'}))
   .pipe(gulp.dest(__dirname+'/dist/fonts/'));
@@ -156,13 +171,13 @@ gulp.task('fa_fonts', function() {
 
 gulp.task('bootstrapjs', function() {
   gulp.src([
-      'bower_components/bootstrap/dist/js/bootstrap.min.js'
+      'node_packages/bootstrap/dist/js/bootstrap.min.js'
     ])
     .pipe(debug({title: 'copy:'}))
     .pipe(gulp.dest('dist/js/'));
 
   gulp.src([
-      'bower_components/jquery/dist/jquery.min.js'
+      'node_packages/jquery/dist/jquery.min.js'
     ])
     .pipe(debug({title: 'copy:'}))
     .pipe(gulp.dest('dist/js/'));
@@ -218,7 +233,7 @@ gulp.task('setup', function(){
    { name: 'Carousel\n', checked: false },
   ],
 
-  _dir   = 'bower_components/bootstrap/',
+  _dir   = 'node_packages/bootstrap/',
   _fonts = [],
   _js    = [], 
   _less  = [
