@@ -14,11 +14,12 @@
   "files": [
     "dist/css/m8tro.css",
     "dist/css/m8tro.min.css",
+    "dist/css/m8tro-extras.css",
+    "dist/css/m8tro-extras.min.css",
     "src/themes/**/*.less",
     "bower.json",
     "gulpfile.js",
     "index.html",
-    "m8ke",
     "package.json",
     "README.md"
   ],
@@ -66,7 +67,8 @@
     {
       "basePath": "/dist/css/",
       "files": [
-        "m8tro.min.css"
+        "m8tro.min.css",
+        "m8tro-extras.min.css"
       ]
     }
   ]
