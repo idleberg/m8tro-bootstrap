@@ -152,17 +152,16 @@ gulp.task('less', function () {
 // Copy tasks
 gulp.task('fa_css', function() {
   
-  gulp.src('node_packages/fontawesome/css/font-awesome.min.css')
+  gulp.src('node_packages/font-awesome/css/font-awesome.min.css')
   .pipe(debug({title: 'copy:'}))
   .pipe(gulp.dest(__dirname+'/dist/css/'));
 });
 
 
-// Copy tasks
 gulp.task('fa_fonts', function() {
 
   gulp.src([
-    'node_packages/fontawesome/fonts/fontawesome-webfont.*'
+    'node_packages/font-awesome/fonts/fontawesome-webfont.*'
   ])
   .pipe(debug({title: 'copy:'}))
   .pipe(gulp.dest(__dirname+'/dist/fonts/'));
