@@ -3,7 +3,7 @@
 [![Bower](https://img.shields.io/bower/v/m8tro-bootstrap.svg?style=flat-square)](https://github.com/idleberg/m8tro-bootstrap/releases)
 [![npm](https://img.shields.io/npm/v/m8tro-bootstrap.svg?style=flat-square)](https://www.npmjs.com/package/m8tro-bootstrap)
 [![Travis](https://img.shields.io/travis/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://travis-ci.org/idleberg/m8tro-bootstrap)
-[![David](https://img.shields.io/david/dev/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://david-dm.org/idleberg/m8tro-bootstrap#info=devDependencies)
+[![David](https://img.shields.io/david/dev/idleberg/m8tro-bootstrap.svg?style=flat-square)](https://david-dm.org/idleberg/m8tro-bootstrap?type=dev)
 [![npm](https://img.shields.io/npm/l/m8tro-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/m8tro-bootstrap)
 
 Bootstrap theme inspired by Windows Phone's [Modern UI](http://msdn.microsoft.com/en-us/library/windows/apps/dn465800.aspx) (aka “Metro”)
