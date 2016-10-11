@@ -61,7 +61,7 @@ The provided `gulpfile.js` will serve as our primary build tool. In order to use
 Once set up, install all required Node packages:
 
 ```bash
-npm install
+yarn || npm install
 ```
 
 Several gulp tasks are now available:
