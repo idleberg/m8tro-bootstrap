@@ -7,3 +7,4 @@ dist/js/jquery.min.js
 node_modules/
 npm-debug.log
 todo.md
+yarn.lock
