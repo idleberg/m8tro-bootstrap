@@ -269,7 +269,11 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
 
 .btn.disabled{
   background-color: inherit;
-  border: transparent;
+  border: 1px solid transparent;
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  color: inherit;
 }
 
 .btn-default,
