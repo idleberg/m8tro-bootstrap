@@ -60,7 +60,7 @@
     "less": "^2.7.1",
     "less-plugin-autoprefix": "^1.5.1",
     "run-sequence": "^1.2.2",
-    "yargs": "^6.5.1"
+    "yargs": "^6.5.0"
   },
   "npmName": "m8tro-bootstrap",
   "npmFileMap": [
