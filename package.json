@@ -10,7 +10,7 @@
     "url": "git://github.com/idleberg/m8tro-bootstrap.git"
   },
   "license": "MIT",
-  "private": false,
+  "main": "dist/css/m8tro.min.css",
   "files": [
     "dist/css/m8tro.css",
     "dist/css/m8tro.min.css",
