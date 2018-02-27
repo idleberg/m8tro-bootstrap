@@ -43,8 +43,8 @@ As of version 3.3.2, the style-sheet is hosted various content delivery networks
 
 Service  | URL
 ---------|----
-[cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap)   | `//cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.7/m8tro.min.css`
-[jsDelivr](http://www.jsdelivr.com/#!bootstrap.m8tro) | `//cdn.jsdelivr.net/bootstrap.m8tro/3.3.7/m8tro.min.css`
+[cdnjs](http://cdnjs.com/libraries/m8tro-bootstrap)   | `https://cdnjs.cloudflare.com/ajax/libs/m8tro-bootstrap/3.3.7/m8tro.min.css`
+[jsDelivr](http://www.jsdelivr.com/#!bootstrap.m8tro) | `https://cdn.jsdelivr.net/bootstrap.m8tro/3.3.7/m8tro.min.css`
 
 **Note:** It is [not advised](http://stackoverflow.com/a/5503156/1329116) to embed a link to the raw file hosted on GitHub.
 
